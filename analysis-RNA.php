@@ -8,6 +8,7 @@
 <?php include 'header.php';?>
 <body>
   <div class="body-div">
+  <h3>Differential Gene Expression Analysis</h3>
 	<div class="loader-container" id="loader-container" style="display: none;"></div>
   
 <form action="process.php" method="POST" enctype="multipart/form-data">
