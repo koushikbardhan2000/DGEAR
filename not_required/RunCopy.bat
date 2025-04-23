@@ -1,0 +1,1 @@
+"C:/Program Files/R/R-4.2.0/bin/x64/Rscript" "C:/xampp/htdocs/webtool/RunCopy.R" "D:/DISSERTATION/DEG/OUTPUT/merged_sep_no_dup1.txt" 1 105 106 234 0.05 2

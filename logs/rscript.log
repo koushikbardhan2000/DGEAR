@@ -1,0 +1,369 @@
+Error in file(file, "rt") : cannot open the connection
+Calls: data.frame -> read.delim -> read.table -> file
+In addition: Warning messages:
+1: In file(file, "rt") :
+  'raw = FALSE' but '/var/www/html/webtool/uploads/' is not a regular file
+2: In file(file, "rt") :
+  cannot open file '/var/www/html/webtool/uploads/': it is a directory
+Execution halted
+2025-02-26 07:04:14 - Executed: /usr/bin/Rscript /var/www/html/webtool/RunCopy.R /var/www/html/webtool/uploads/ '' '' '' '' '' '' 2>&1 | tee -a /var/www/html/webtool/logs/rscript.log
+Return Code: 0
+Output:
+Error in file(file, "rt") : cannot open the connection
+Calls: data.frame -> read.delim -> read.table -> file
+In addition: Warning messages:
+1: In file(file, "rt") :
+  'raw = FALSE' but '/var/www/html/webtool/uploads/' is not a regular file
+2: In file(file, "rt") :
+  cannot open file '/var/www/html/webtool/uploads/': it is a directory
+Execution halted
+
+Error in file(file, ifelse(append, "a", "w")) : 
+  cannot open the connection
+Calls: write.csv -> eval.parent -> eval -> eval -> <Anonymous> -> file
+In addition: Warning message:
+In file(file, ifelse(append, "a", "w")) :
+  cannot open file 'C:/xampp/htdocs/webtool/csv/t_stat_significant.csv': No such file or directory
+Execution halted
+2025-02-26 07:05:34 - Executed: /usr/bin/Rscript /var/www/html/webtool/RunCopy.R /var/www/html/webtool/uploads/merged_sep_no_dup-truncated.txt '1' '106' '107' '234' '0.005' '3' 2>&1 | tee -a /var/www/html/webtool/logs/rscript.log
+Return Code: 0
+Output:
+Error in file(file, ifelse(append, "a", "w")) :
+  cannot open the connection
+Calls: write.csv -> eval.parent -> eval -> eval -> <Anonymous> -> file
+In addition: Warning message:
+In file(file, ifelse(append, "a", "w")) :
+  cannot open file 'C:/xampp/htdocs/webtool/csv/t_stat_significant.csv': No such file or directory
+Execution halted
+
+Error in file(file, ifelse(append, "a", "w")) : 
+  cannot open the connection
+Calls: write.csv -> eval.parent -> eval -> eval -> <Anonymous> -> file
+In addition: Warning message:
+In file(file, ifelse(append, "a", "w")) :
+  cannot open file 'C:/xampp/htdocs/webtool/csv/t_stat_significant.csv': No such file or directory
+Execution halted
+2025-02-26 07:06:30 - Executed: /usr/bin/Rscript /var/www/html/webtool/RunCopy.R /var/www/html/webtool/uploads/merged_sep_no_dup-truncated.txt '1' '106' '107' '234' '0.05' '2' 2>&1 | tee -a /var/www/html/webtool/logs/rscript.log
+Return Code: 0
+Output:
+Error in file(file, ifelse(append, "a", "w")) :
+  cannot open the connection
+Calls: write.csv -> eval.parent -> eval -> eval -> <Anonymous> -> file
+In addition: Warning message:
+In file(file, ifelse(append, "a", "w")) :
+  cannot open file 'C:/xampp/htdocs/webtool/csv/t_stat_significant.csv': No such file or directory
+Execution halted
+
+Error in file(file, ifelse(append, "a", "w")) : 
+  cannot open the connection
+Calls: write.csv -> eval.parent -> eval -> eval -> <Anonymous> -> file
+In addition: Warning message:
+In file(file, ifelse(append, "a", "w")) :
+  cannot open file 'C:/xampp/htdocs/webtool/csv/t_stat_significant.csv': No such file or directory
+Execution halted
+2025-02-26 07:09:19 - Executed: /usr/bin/Rscript /var/www/html/webtool/RunCopy.R /var/www/html/webtool/uploads/merged_sep_no_dup-truncated.txt '1' '106' '107' '234' '0.05' '2' 2>&1 | tee -a /var/www/html/webtool/logs/rscript.log
+Return Code: 0
+Output:
+Error in file(file, ifelse(append, "a", "w")) :
+  cannot open the connection
+Calls: write.csv -> eval.parent -> eval -> eval -> <Anonymous> -> file
+In addition: Warning message:
+In file(file, ifelse(append, "a", "w")) :
+  cannot open file 'C:/xampp/htdocs/webtool/csv/t_stat_significant.csv': No such file or directory
+Execution halted
+
+Error in file(file, ifelse(append, "a", "w")) : 
+  cannot open the connection
+Calls: write.csv -> eval.parent -> eval -> eval -> <Anonymous> -> file
+In addition: Warning message:
+In file(file, ifelse(append, "a", "w")) :
+  cannot open file 'C:/xampp/htdocs/webtool/csv/t_stat_significant.csv': No such file or directory
+Execution halted
+2025-02-26 07:47:36 - Executed: /usr/bin/Rscript /var/www/html/webtool/RunCopy.R /var/www/html/webtool/uploads/merged_sep_no_dup-truncated.txt '1' '106' '107' '234' '0.05' '2' 2>&1 | tee -a /var/www/html/webtool/logs/rscript.log
+Return Code: 0
+Output:
+Error in file(file, ifelse(append, "a", "w")) :
+  cannot open the connection
+Calls: write.csv -> eval.parent -> eval -> eval -> <Anonymous> -> file
+In addition: Warning message:
+In file(file, ifelse(append, "a", "w")) :
+  cannot open file 'C:/xampp/htdocs/webtool/csv/t_stat_significant.csv': No such file or directory
+Execution halted
+
+Error in file(file, ifelse(append, "a", "w")) : 
+  cannot open the connection
+Calls: write.csv -> eval.parent -> eval -> eval -> <Anonymous> -> file
+In addition: Warning message:
+In file(file, ifelse(append, "a", "w")) :
+  cannot open file 'C:/xampp/htdocs/webtool/csv/t_stat_significant.csv': No such file or directory
+Execution halted
+2025-02-26 07:51:35 - Executed: /usr/bin/Rscript /var/www/html/webtool/RunCopy.R /var/www/html/webtool/uploads/merged_sep_no_dup-truncated.txt '1' '105' '106' '234' '0.05' '2' 2>&1 | tee -a /var/www/html/webtool/logs/rscript.log
+Return Code: 0
+Output:
+Error in file(file, ifelse(append, "a", "w")) :
+  cannot open the connection
+Calls: write.csv -> eval.parent -> eval -> eval -> <Anonymous> -> file
+In addition: Warning message:
+In file(file, ifelse(append, "a", "w")) :
+  cannot open file 'C:/xampp/htdocs/webtool/csv/t_stat_significant.csv': No such file or directory
+Execution halted
+
+Error in file(file, ifelse(append, "a", "w")) : 
+  cannot open the connection
+Calls: write.csv -> eval.parent -> eval -> eval -> <Anonymous> -> file
+In addition: Warning message:
+In file(file, ifelse(append, "a", "w")) :
+  cannot open file '/var/www/html/webtool/csv/t_stat_significant.csv': Permission denied
+Execution halted
+2025-02-26 08:41:22 - Executed: /usr/bin/Rscript /var/www/html/webtool/RunCopy.R /var/www/html/webtool/uploads/merged_sep_no_dup-truncated.txt '1' '104' '105' '234' '0.05' '3' 2>&1 | tee -a /var/www/html/webtool/logs/rscript.log
+Return Code: 0
+Output:
+Error in file(file, ifelse(append, "a", "w")) :
+  cannot open the connection
+Calls: write.csv -> eval.parent -> eval -> eval -> <Anonymous> -> file
+In addition: Warning message:
+In file(file, ifelse(append, "a", "w")) :
+  cannot open file '/var/www/html/webtool/csv/t_stat_significant.csv': Permission denied
+Execution halted
+
+Error in library(DescTools) : there is no package called 'DescTools'
+Execution halted
+2025-02-26 08:43:26 - Executed: /usr/bin/Rscript /var/www/html/webtool/RunCopy.R /var/www/html/webtool/uploads/merged_sep_no_dup-truncated.txt '1' '104' '105' '234' '0.05' '3' 2>&1 | tee -a /var/www/html/webtool/logs/rscript.log
+Return Code: 0
+Output:
+Error in library(DescTools) : there is no package called 'DescTools'
+Execution halted
+
+Error in library(DescTools) : there is no package called 'DescTools'
+Execution halted
+2025-02-26 08:45:11 - Executed: /usr/bin/Rscript /var/www/html/webtool/RunCopy.R /var/www/html/webtool/uploads/merged_sep_no_dup-truncated.txt '1' '106' '107' '234' '0.05' '2' 2>&1 | tee -a /var/www/html/webtool/logs/rscript.log
+Return Code: 0
+Output:
+Error in library(DescTools) : there is no package called 'DescTools'
+Execution halted
+
+Error in library(DescTools) : there is no package called 'DescTools'
+Execution halted
+2025-02-26 08:47:40 - Executed: /usr/bin/Rscript /var/www/html/webtool/RunCopy.R /var/www/html/webtool/uploads/exprs_GSE5583.txt '1' '3' '4' '6' '0.05' '3' 2>&1 | tee -a /var/www/html/webtool/logs/rscript.log
+Return Code: 0
+Output:
+Error in library(DescTools) : there is no package called 'DescTools'
+Execution halted
+
+Error in con1:con2 : NA/NaN argument
+Calls: [ -> [.data.frame -> eval
+Execution halted
+2025-02-26 08:52:17 - Executed: /usr/bin/Rscript /var/www/html/webtool/RunCopy.R /var/www/html/webtool/uploads/exprs_GSE5583.txt '' '' '' '' '' '' 2>&1 | tee -a /var/www/html/webtool/logs/rscript.log
+Return Code: 0
+Output:
+Error in con1:con2 : NA/NaN argument
+Calls: [ -> [.data.frame -> eval
+Execution halted
+
+Error in con1:con2 : NA/NaN argument
+Calls: [ -> [.data.frame -> eval
+Execution halted
+2025-02-26 08:52:30 - Executed: /usr/bin/Rscript /var/www/html/webtool/RunCopy.R /var/www/html/webtool/uploads/exprs_GSE5583.txt '' '' '' '' '' '' 2>&1 | tee -a /var/www/html/webtool/logs/rscript.log
+Return Code: 0
+Output:
+Error in con1:con2 : NA/NaN argument
+Calls: [ -> [.data.frame -> eval
+Execution halted
+
+Error in con1:con2 : NA/NaN argument
+Calls: [ -> [.data.frame -> eval
+Execution halted
+2025-02-26 08:52:32 - Executed: /usr/bin/Rscript /var/www/html/webtool/RunCopy.R /var/www/html/webtool/uploads/exprs_GSE5583.txt '' '' '' '' '' '' 2>&1 | tee -a /var/www/html/webtool/logs/rscript.log
+Return Code: 0
+Output:
+Error in con1:con2 : NA/NaN argument
+Calls: [ -> [.data.frame -> eval
+Execution halted
+
+Error in con1:con2 : NA/NaN argument
+Calls: [ -> [.data.frame -> eval
+Execution halted
+2025-02-26 08:52:34 - Executed: /usr/bin/Rscript /var/www/html/webtool/RunCopy.R /var/www/html/webtool/uploads/exprs_GSE5583.txt '' '' '' '' '' '' 2>&1 | tee -a /var/www/html/webtool/logs/rscript.log
+Return Code: 0
+Output:
+Error in con1:con2 : NA/NaN argument
+Calls: [ -> [.data.frame -> eval
+Execution halted
+
+Error in library(DescTools) : there is no package called 'DescTools'
+Execution halted
+2025-02-26 08:55:37 - Executed: /usr/bin/Rscript /var/www/html/webtool/RunCopy.R /var/www/html/webtool/uploads/merged_sep_no_dup-truncated.txt '1' '134' '135' '234' '0.01' '2' 2>&1 | tee -a /var/www/html/webtool/logs/rscript.log
+Return Code: 0
+Output:
+Error in library(DescTools) : there is no package called 'DescTools'
+Execution halted
+
+Error in library(DescTools) : there is no package called 'DescTools'
+Execution halted
+2025-02-26 08:57:46 - Executed: /usr/bin/Rscript /var/www/html/webtool/RunCopy.R /var/www/html/webtool/uploads/exprs_GSE5583.txt '1' '3' '4' '6' '0.05' '3' 2>&1 | tee -a /var/www/html/webtool/logs/rscript.log
+Return Code: 0
+Output:
+Error in library(DescTools) : there is no package called 'DescTools'
+Execution halted
+
+Error in `[.data.frame`(dataframe, , eval(exp1:exp2)) : 
+  undefined columns selected
+Calls: [ -> [.data.frame
+Execution halted
+2025-04-11 10:13:52 - Executed: /usr/bin/Rscript /var/www/DGEAR/RunCopy.R /var/www/DGEAR/uploads/Example_microarray_data.txt '1' '134' '1351' '234' '0.05' '3' 2>&1 | tee -a /var/www/DGEAR/logs/rscript.log
+Return Code: 0
+Output:
+Error in `[.data.frame`(dataframe, , eval(exp1:exp2)) :
+  undefined columns selected
+Calls: [ -> [.data.frame
+Execution halted
+
+Error in `[.data.frame`(dataframe, , eval(exp1:exp2)) : 
+  undefined columns selected
+Calls: [ -> [.data.frame
+Execution halted
+2025-04-11 10:14:28 - Executed: /usr/bin/Rscript /var/www/DGEAR/RunCopy.R /var/www/DGEAR/uploads/Example_microarray_data.txt '1' '134' '1351' '234' '0.05' '3' 2>&1 | tee -a /var/www/DGEAR/logs/rscript.log
+Return Code: 0
+Output:
+Error in `[.data.frame`(dataframe, , eval(exp1:exp2)) :
+  undefined columns selected
+Calls: [ -> [.data.frame
+Execution halted
+
+Error in `[.data.frame`(dataframe, , eval(exp1:exp2)) : 
+  undefined columns selected
+Calls: [ -> [.data.frame
+Execution halted
+2025-04-11 10:18:04 - Executed: /usr/bin/Rscript /var/www/DGEAR/RunCopy.R /var/www/DGEAR/uploads/Example_microarray_data.txt '1' '134' '1351' '234' '0.05' '3' 2>&1 | tee -a /var/www/DGEAR/logs/rscript.log
+Return Code: 0
+Output:
+Error in `[.data.frame`(dataframe, , eval(exp1:exp2)) :
+  undefined columns selected
+Calls: [ -> [.data.frame
+Execution halted
+
+Error in library(DescTools) : there is no package called 'DescTools'
+Execution halted
+2025-04-11 10:25:22 - Executed: /usr/bin/Rscript /var/www/DGEAR/RunCopy.R /var/www/DGEAR/uploads/Example_microarray_data.txt '1' '134' '135' '234' '0.05' '3' 2>&1 | tee -a /var/www/DGEAR/logs/rscript.log
+Return Code: 0
+Output:
+Error in library(DescTools) : there is no package called 'DescTools'
+Execution halted
+
+Error in library(DescTools) : there is no package called 'DescTools'
+Execution halted
+2025-04-11 10:28:03 - Executed: /usr/bin/Rscript /var/www/DGEAR/RunCopy.R /var/www/DGEAR/uploads/Example_microarray_data.txt '1' '134' '135' '234' '0.05' '2' 2>&1 | tee -a /var/www/DGEAR/logs/rscript.log
+Return Code: 0
+Output:
+Error in library(DescTools) : there is no package called 'DescTools'
+Execution halted
+
+Error in library(DescTools) : there is no package called 'DescTools'
+Execution halted
+2025-04-11 10:33:23 - Executed: /usr/bin/Rscript /var/www/DGEAR/RunCopy.R /var/www/DGEAR/uploads/Example_microarray_data.txt '1' '134' '135' '234' '0.05' '2' 2>&1 | tee -a /var/www/DGEAR/logs/rscript.log
+Return Code: 0
+Output:
+Error in library(DescTools) : there is no package called 'DescTools'
+Execution halted
+
+2025-04-11 10:48:48 - Executed: /usr/bin/Rscript /var/www/DGEAR/RunCopy.R /var/www/DGEAR/uploads/Example_microarray_data.txt '1' '134' '135' '234' '0.05' '2' 2>&1 | tee -a /var/www/DGEAR/logs/rscript.log
+Return Code: 0
+Output:
+
+
+2025-04-11 10:51:46 - Executed: /usr/bin/Rscript /var/www/DGEAR/RunCopy.R /var/www/DGEAR/uploads/Example_microarray_data.txt '1' '134' '135' '234' '0.05' '2' 2>&1 | tee -a /var/www/DGEAR/logs/rscript.log
+Return Code: 0
+Output:
+
+
+2025-04-11 11:06:28 - Executed: /usr/bin/Rscript /var/www/DGEAR/RunCopy.R /var/www/DGEAR/uploads/Example_microarray_data (1).txt '1' '134' '135' '234' '0.05' '3' 2>&1 | tee -a /var/www/DGEAR/logs/rscript.log
+Return Code: 2
+Output:
+
+
+2025-04-11 11:07:27 - Executed: /usr/bin/Rscript /var/www/DGEAR/RunCopy.R /var/www/DGEAR/uploads/Example_microarray_data.txt '1' '134' '135' '234' '0.05' '3' 2>&1 | tee -a /var/www/DGEAR/logs/rscript.log
+Return Code: 0
+Output:
+
+
+2025-04-11 11:11:46 - Executed: /usr/bin/Rscript /var/www/DGEAR/RunCopy.R /var/www/DGEAR/uploads/Example_microarray_data.txt '1' '134' '135' '234' '0.05' '3' 2>&1 | tee -a /var/www/DGEAR/logs/rscript.log
+Return Code: 0
+Output:
+
+
+2025-04-11 11:33:06 - Executed: /usr/bin/Rscript /var/www/DGEAR/RunCopy.R /var/www/DGEAR/uploads/Example_microarray_data.txt '1' '134' '135' '234' '0.05' '3' 2>&1 | tee -a /var/www/DGEAR/logs/rscript.log
+Return Code: 0
+Output:
+
+
+2025-04-11 11:36:43 - Executed: /usr/bin/Rscript /var/www/DGEAR/RunCopy.R /var/www/DGEAR/uploads/Example_microarray.txt '1' '134' '135' '234' '0.05' '3' 2>&1 | tee -a /var/www/DGEAR/logs/rscript.log
+Return Code: 0
+Output:
+
+
+2025-04-11 11:36:44 - Executed: /usr/bin/Rscript /var/www/DGEAR/RunCopy.R /var/www/DGEAR/uploads/Example_microarray_data.txt '1' '134' '135' '234' '0.05' '3' 2>&1 | tee -a /var/www/DGEAR/logs/rscript.log
+Return Code: 0
+Output:
+
+
+Error in file(file, "rt") : cannot open the connection
+Calls: data.frame -> read.delim -> read.table -> file
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file '/var/www/DGEAR/uploads/expression': No such file or directory
+Execution halted
+2025-04-16 05:42:26 - Executed: /usr/bin/Rscript /var/www/DGEAR/RunCopy.R /var/www/DGEAR/uploads/expression data1.csv '2' '6' '7' '12' '0.01' '3' 2>&1 | tee -a /var/www/DGEAR/logs/rscript.log
+Return Code: 0
+Output:
+Error in file(file, "rt") : cannot open the connection
+Calls: data.frame -> read.delim -> read.table -> file
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file '/var/www/DGEAR/uploads/expression': No such file or directory
+Execution halted
+
+Error in file(file, "rt") : cannot open the connection
+Calls: data.frame -> read.delim -> read.table -> file
+In addition: Warning messages:
+1: In file(file, "rt") :
+  'raw = FALSE' but '/var/www/DGEAR/uploads/' is not a regular file
+2: In file(file, "rt") :
+  cannot open file '/var/www/DGEAR/uploads/': it is a directory
+Execution halted
+2025-04-17 11:56:47 - Executed: /usr/bin/Rscript /var/www/DGEAR/RunCopy.R /var/www/DGEAR/uploads/ '' '' '' '' '' '' 2>&1 | tee -a /var/www/DGEAR/logs/rscript.log
+Return Code: 0
+Output:
+Error in file(file, "rt") : cannot open the connection
+Calls: data.frame -> read.delim -> read.table -> file
+In addition: Warning messages:
+1: In file(file, "rt") :
+  'raw = FALSE' but '/var/www/DGEAR/uploads/' is not a regular file
+2: In file(file, "rt") :
+  cannot open file '/var/www/DGEAR/uploads/': it is a directory
+Execution halted
+
+Error in file(file, "rt") : cannot open the connection
+Calls: data.frame -> read.delim -> read.table -> file
+In addition: Warning messages:
+1: In file(file, "rt") :
+  'raw = FALSE' but '/var/www/DGEAR/uploads/' is not a regular file
+2: In file(file, "rt") :
+  cannot open file '/var/www/DGEAR/uploads/': it is a directory
+Execution halted
+2025-04-17 12:23:07 - Executed: /usr/bin/Rscript /var/www/DGEAR/RunCopy.R /var/www/DGEAR/uploads/ '' '' '' '' '' '' 2>&1 | tee -a /var/www/DGEAR/logs/rscript.log
+Return Code: 0
+Output:
+Error in file(file, "rt") : cannot open the connection
+Calls: data.frame -> read.delim -> read.table -> file
+In addition: Warning messages:
+1: In file(file, "rt") :
+  'raw = FALSE' but '/var/www/DGEAR/uploads/' is not a regular file
+2: In file(file, "rt") :
+  cannot open file '/var/www/DGEAR/uploads/': it is a directory
+Execution halted
+
+2025-04-23 08:54:27 - Executed: /usr/bin/Rscript /var/www/DGEAR/RunCopy.R /var/www/DGEAR/uploads/Example_microarray_data.txt '1' '134' '135' '234' '0.05' '5' 2>&1 | tee -a /var/www/DGEAR/logs/rscript.log
+Return Code: 0
+Output:
+
+

@@ -1,0 +1,325 @@
+  
+/* General for all the pages and header-footer*/ 
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color:antiquewhite;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  place-items: center; 
+  /* centers all the .body-div */
+  
+}
+
+.body-div {
+	margin: 20px; 
+	width: 70%;
+	background-color:rgb(253, 253, 253); 
+	padding: 10px; 
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+h1,h2 {
+text-align: left;
+}
+h3 {
+  text-align: center;
+  font-size: 24px;
+}
+
+p {
+  text-align: justify;
+}
+header {
+  background-color: #000;
+  width: 100%;
+  display: flex;
+
+}
+
+/* Logo Styling */
+.logo-DGEAR {
+    height: 90px;
+	width: 90px;
+	/* margin-left: 360px; */
+
+}
+
+/* Header Text */
+.header-text {
+    color: white;
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 34px;
+	/* text-align: center; */
+}
+
+.header-text h2 {
+    margin: 0;
+    font-size: 18px;
+    /* text-align: center; */
+}
+
+/* Navigation bar */
+nav {
+  background-color: black;
+  height: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 7px,13px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+a.active,nav ul li a:hover{
+  background:white;
+  transition: .5s;
+  color: #000;
+}
+footer {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 0px;
+    display: flex;
+	text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    position: static;
+    width: 100%;
+    height: auto;
+}
+footer p {
+	text-align: center;
+	font-size: 12px;
+}
+footer .logo-Lin {
+	margin-right:50px;
+}
+footer .logo-nbu {
+	margin-left:50px;
+}
+
+/* Loader animation for refreash and loading*/
+.loader-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	display: block;
+	justify-content: center;
+	align-items: center;
+}
+.loader {
+	border: 16px solid #f3f3f3;
+	border-top: 16px solid #3498db;
+	border-radius: 50%;
+	width: 80px;
+	height: 80px;
+	animation: spin 2s linear infinite;
+	display: block;
+}
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+/* Home page contents*/
+.main-content {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-section {
+  width: 60%;
+  padding: 30px;
+  /* box-sizing: content-box; */
+}
+
+.right-section {
+  width: 50%;
+}
+
+.left-section p {
+  color: #000000;
+  font-size: 18px;
+  text-align: justify;
+}
+.right-section p {
+  color: #000000;
+  font-size: 18px;
+  text-align: justify;
+  font-weight: lighter;
+}
+
+.right-section img {
+  width: 100%;
+  height: auto;
+}
+
+/* Form Styles | Analyssis page | Contact Us page */
+form {
+	width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 15px;
+    max-width: 600px; /* Adjust width */
+    margin: auto; /* Center the form */
+    padding: 20px;
+    background: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.file-upload, .drop-area, input[type="file"], button {
+    grid-column: span 2;
+}
+.drop-area {
+    width: 90%;
+    padding: 20px;
+    border: 2px dashed #007bff;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.drop-area:hover {
+    background-color: #f0f8ff;
+}
+#file-name {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #4771e6;
+    font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 90%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+  margin-top: 10px;
+}
+
+button {
+  background-color: #000;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 10px;
+    background-color: #068;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #0056b3;
+}
+
+.change-btn {
+    display: inline-block;
+    padding: 10px;
+    background-color: #068;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+.change-btn:hover {
+	background-color: #0056b3;
+}
+#active {
+  color: white; /* Text color */
+  background-color: #000; /* Background color */
+  padding: 10px 20px; /* Padding for better button appearance */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners */
+}
+/* Table | Analysis page*/
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+tbody tr td a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  padding: 7px,13px;
+  border-radius: 3px;
+  font-weight: bold;
+  text-align: center;
+}
+th {
+  background-color: #f2f2f2;
+}
+
+
+
