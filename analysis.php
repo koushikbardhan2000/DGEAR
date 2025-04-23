@@ -58,7 +58,7 @@
     <button class="button" type="submit" onclick="startLoading()">Submit request</button>
 </form>
 <!-- form for mobile with class mob-form -->
-<form class="mob-form" action="process.php" method="POST" enctype="multipart/form-data">
+<!-- <form class="mob-form" action="process.php" method="POST" enctype="multipart/form-data">
 	<div class="form-group">
 		<a href="analysis.php" id="active" class="change-btn">[Microarray Analysis]</a>
 	</div>
@@ -103,7 +103,7 @@
 	</div>
 
     <button class="button" type="submit" onclick="startLoading()">Submit request</button>
-</form>
+</form> -->
   </div>
 <script src="js/script.js"></script>
 <script>
