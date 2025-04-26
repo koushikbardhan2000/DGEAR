@@ -367,3 +367,40 @@ Return Code: 0
 Output:
 
 
+2025-04-26 07:17:53 - Executed: /usr/bin/Rscript /var/www/DGEAR/RunCopy.R /var/www/DGEAR/uploads/Example_microarray_data.txt '1' '134' '135' '234' '0.005' '3' 2>&1 | tee -a /var/www/DGEAR/logs/rscript.log
+Return Code: 0
+Output:
+
+
+Error in pdf("/var/www/html/DGEAR/plots/heatmap.pdf") : 
+  cannot open file '/var/www/html/DGEAR/plots/heatmap.pdf'
+Execution halted
+2025-04-26 07:22:18 - Executed: /usr/bin/Rscript /var/www/DGEAR/microarray.R /var/www/DGEAR/uploads/Example_microarray_data.txt '1' '134' '135' '234' '0.005' '3' 2>&1 | tee -a /var/www/DGEAR/logs/rscript.log
+Return Code: 0
+Output:
+Error in pdf("/var/www/html/DGEAR/plots/heatmap.pdf") :
+  cannot open file '/var/www/html/DGEAR/plots/heatmap.pdf'
+Execution halted
+
+Error in pdf("/var/www/html/DGEAR/plots/heatmap.pdf") : 
+  cannot open file '/var/www/html/DGEAR/plots/heatmap.pdf'
+Execution halted
+2025-04-26 07:23:40 - Executed: /usr/bin/Rscript /var/www/DGEAR/microarray.R /var/www/DGEAR/uploads/Example_microarray_data.txt '1' '134' '135' '234' '0.05' '3' 2>&1 | tee -a /var/www/DGEAR/logs/rscript.log
+Return Code: 0
+Output:
+Error in pdf("/var/www/html/DGEAR/plots/heatmap.pdf") :
+  cannot open file '/var/www/html/DGEAR/plots/heatmap.pdf'
+Execution halted
+
+null device 
+          1 
+null device 
+          1 
+2025-04-26 07:26:20 - Executed: /usr/bin/Rscript /var/www/DGEAR/microarray.R /var/www/DGEAR/uploads/Example_microarray_data.txt '1' '134' '135' '234' '0.05' '3' 2>&1 | tee -a /var/www/DGEAR/logs/rscript.log
+Return Code: 0
+Output:
+null device
+          1
+null device
+          1
+
