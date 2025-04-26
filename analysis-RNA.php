@@ -11,7 +11,7 @@
   <h3>Differential Gene Expression Analysis</h3>
 	<div class="loader-container" id="loader-container" style="display: none;"></div>
   
-<form action="process.php" method="POST" enctype="multipart/form-data">
+<form action="process-rna.php" method="POST" enctype="multipart/form-data">
 	<div class="form-group">
 		<a href="analysis.php" id="" class="change-btn">Microarray Analysis</a>
 	</div>
@@ -47,7 +47,7 @@
         <input type="text" name="alpha" placeholder="Any value i.e. 0.1, 0.05, 0.005 etc." required>
 
         <label for="votting_cutoff">Voting Cutoff:</label>
-        <input type="text" name="votting_cutoff" placeholder="Any number 1 to 5." required>
+        <input type="text" name="votting_cutoff" placeholder="Any number 1 to 3." required>
     </div>
 	<div class="form-group">
         <label for="download">Download Example data:</label>
@@ -55,7 +55,7 @@
 		<a href="example/Example_RNA-seq_data.tsv" download class="download-btn">RNA-seq Data</a>
 	</div>
 
-    <button class="button" type="submit" onclick="startLoading()">Submit request</button>
+    <button class="button" type="submit" onclick=startLoading()>Submit request</button>
 </form>
 
   </div>

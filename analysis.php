@@ -55,7 +55,7 @@
 		<a href="example/Example_RNA-seq_data.tsv" download class="download-btn">RNA-seq Data</a>
 	</div>
 
-    <button class="button" type="submit" onclick="startLoading()">Submit request</button>
+    <button class="button" type="submit" onclick=startLoading()>Submit request</button>
 </form>
 <!-- form for mobile with class mob-form -->
 <!-- <form class="mob-form" action="process.php" method="POST" enctype="multipart/form-data">
