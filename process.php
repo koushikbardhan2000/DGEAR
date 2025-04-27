@@ -29,7 +29,7 @@ $log_message = date("Y-m-d H:i:s") . " - Executed: $cmd\nReturn Code: $return_va
 file_put_contents($log_file, $log_message, FILE_APPEND);
 
 if ($return_var !== 0) {
-    die("Error executing R script. Check logs for details.");
+    die("ahh! Something went wrong. Please check the log file for details or contact administrator @koushikbardhan2000@gmail.com.");
 }
 
 // Redirect to results page
