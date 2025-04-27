@@ -6,7 +6,7 @@ cols <- as.numeric(args[1])  # Number of points for histogram
 fname <- args[2]             # File name without extension
 
 # Define full path for the output image
-output_path <- paste0("/var/www/html/webtool/test/", fname, ".png")
+output_path <- paste0("/var/www/DGEAR/test/", fname, ".png")
 
 # Generate random data and plot histogram
 png(filename=output_path, width=500, height=500)
