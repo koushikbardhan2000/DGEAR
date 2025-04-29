@@ -160,3 +160,26 @@ output <- na.omit(output)
 
 # Write to file (optional)
 write.csv(output, "/var/www/DGEAR/csv/RNAseq_significant.csv", row.names = FALSE)
+
+
+
+# GESA with enrichR
+library(enrichR)
+gene_list = output$GeneID
+dbs <- c("GO_Molecular_Function_2015", "GO_Cellular_Component_2015", "GO_Biological_Process_2015")
+enriched = enrichr(gene_list, dbs)
+
+file_name = paste0("/var/www/DGEAR/plots/rna-seq/GO_Enrichment_", names(enriched)[1], ".png")
+png(file_name, width = 1200, height = 800, res = 150)
+plotEnrich(enriched[[1]], title = paste("GO_Enrichment:", names(enriched)[1]),showTerms = 10, numChar = 40, y = "Count", orderBy = "P.value")
+dev.off()
+
+file_name = paste0("/var/www/DGEAR/plots/rna-seq/GO_Enrichment_", names(enriched)[2], ".png")
+png(file_name, width = 1200, height = 800, res = 150)
+plotEnrich(enriched[[2]], title = paste("GO_Enrichment:", names(enriched)[2]),showTerms = 10, numChar = 40, y = "Count", orderBy = "P.value")
+dev.off()
+
+file_name = paste0("/var/www/DGEAR/plots/rna-seq/GO_Enrichment_", names(enriched)[3], ".png")
+png(file_name, width = 1200, height = 800, res = 150)
+plotEnrich(enriched[[3]], title = paste("GO_Enrichment:", names(enriched)[3]),showTerms = 10, numChar = 40, y = "Count", orderBy = "P.value")
+dev.off()

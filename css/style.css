@@ -370,3 +370,70 @@ th {
 
 
 
+/* results page plots gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr; /* Mobile: 1 column */
+  gap: 20px;
+  justify-items: center;
+  padding: 20px;
+}
+
+.plot-card {
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  transition: transform 0.2s ease;
+}
+
+.plot-card:hover {
+  transform: scale(1.02);
+}
+
+.plot-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.download-link {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #333;
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Two-column grid on tablets and larger screens */
+@media (min-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Optional: More columns on very large screens */
+@media (min-width: 1200px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Mobile tweaks */
+@media (max-width: 600px) {
+  .plot-card {
+    max-width: 90%;
+  }
+
+  .download-link {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}

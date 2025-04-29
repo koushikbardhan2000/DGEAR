@@ -53,6 +53,7 @@
   </div>
   <div class="body-div">
   <h2>Generated Plots</h2>
+  <div class="gallery">
   <?php
 $plot_dir = "plots/";
 $allowed_extensions = ['png', 'jpg', 'jpeg', 'gif'];
@@ -67,8 +68,10 @@ foreach ($files as $file) {
 
     if (in_array(strtolower($file_ext), $allowed_extensions)) {
         $has_images = true;
-        echo '<p><img src="' . $file_path . '" alt="Plot Image" style="max-width: 500px; display: block; margin-bottom: 10px;"></p>';
-        echo '<p>Download the plot: <a style="text-decoration: none; color: black; font-size: 18px; padding: 7px 13px; border-radius: 3px; font-weight: bold;" href="' . $file_path . '" download>Download</a></p>';
+        echo '<div class="plot-card">';
+        echo '<img src="' . $file_path . '" alt="Plot Image">';
+        echo '<a class="download-link" href="' . $file_path . '" download>Download</a>';
+        echo '</div>';
     }
 }
 
@@ -77,6 +80,7 @@ if (!$has_images) {
 }
 ?>
 
+  </div>
   </div>
   </div>
 </body>
