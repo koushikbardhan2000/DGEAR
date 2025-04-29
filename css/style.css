@@ -81,6 +81,9 @@ nav li:first-child {
 
 }
 
+.nav-logo-text {
+  text-align: left;
+}
 nav a {
   height: 100%;
   padding: 0 20px;
