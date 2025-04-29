@@ -9,47 +9,42 @@
 <body>
   <div class="body-div">
   <h2>Statistical Tests</h2>
-  <table>
-    <thead>
-      <tr>
-        <th>Serial No.</th>
-        <th>Statistical Tests</th>
-        <th>Download Links</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>1</td>
-        <td>Ensemsble Result</td>
-        <td><a href="csv/ensembl_sigificant.csv" download>Download</a></td> <!-- Full path is not required i.e. "csv/ensembl_sigificant.csv"  -->
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Dunnett's t-test</td>
-        <td><a href="csv/d_stat_significant.csv" download>Download</a></td> <!-- Full path is not required i.e. "csv/ensembl_sigificant.csv"  -->
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Half t-test</td>
-        <td><a href="csv/half_t_stat_significant.csv" download>Download</a></td> <!-- Full path is not required i.e. "csv/ensembl_sigificant.csv"  -->
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>One-Way ANOVA</td>
-        <td><a href="csv/o_stat_significant.csv" download>Download</a></td> <!-- Full path is not required i.e. "csv/ensembl_sigificant.csv"  -->
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>T-test Result</td>
-        <td><a href="csv/t_stat_significant.csv" download>Download</a></td> <!-- Full path is not required i.e. "csv/ensembl_sigificant.csv"  -->
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>Wilcox/Mann-wheitney U-test</td>
-        <td><a href="csv/u_stat_significant.csv" download>Download</a></td> <!-- Full path is not required i.e. "csv/ensembl_sigificant.csv"  -->
-      </tr>
-    </tbody>
-  </table>    
+  <?php
+$csv_dir = "csv/";
+$tests = [
+  "Ensemble Result" => "ensembl_sigificant.csv",
+  "Dunnett's t-test" => "d_stat_significant.csv",
+  "Half t-test" => "half_t_stat_significant.csv",
+  "One-Way ANOVA" => "o_stat_significant.csv",
+  "T-test Result" => "t_stat_significant.csv",
+  "Wilcox/Mann-Whitney U-test" => "u_stat_significant.csv"
+];
+?>
+
+<table>
+  <thead>
+    <tr>
+      <th>Serial No.</th>
+      <th>Statistical Tests</th>
+      <th>Download Links</th>
+    </tr>
+  </thead>
+  <tbody>
+    <?php
+    $serial = 1;
+    foreach ($tests as $test => $filename) {
+      $filepath = $csv_dir . $filename;
+      echo "<tr>";
+      echo "<td>{$serial}</td>";
+      echo "<td>{$test}</td>";
+      echo "<td><a class='download-link' href='{$filepath}' download>Download</a></td>";
+      echo "</tr>";
+      $serial++;
+    }
+    ?>
+  </tbody>
+</table>
+ 
   </div>
   <div class="body-div">
   <h2>Generated Plots</h2>

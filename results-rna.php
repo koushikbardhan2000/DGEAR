@@ -9,37 +9,41 @@
 <body>
   <div class="body-div">
   <h2>Statistical Tests</h2>
-  <table>
-    <thead>
-      <tr>
-        <th>Serial No.</th>
-        <th>Statistical Tests</th>
-        <th>Download Links</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>1</td>
-        <td>Ensemsble Result</td>
-        <td><a href="csv/RNAseq_significant.csv" download>Download</a></td> <!-- Full path is not required i.e. "csv/ensembl_sigificant.csv"  -->
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>VER1</td>
-        <td><a href="csv/VER1.csv" download>Download</a></td> <!-- Full path is not required i.e. "csv/ensembl_sigificant.csv"  -->
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>VER2</td>
-        <td><a href="csv/VER2.csv" download>Download</a></td> <!-- Full path is not required i.e. "csv/ensembl_sigificant.csv"  -->
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>VER3</td>
-        <td><a href="csv/VER3.csv" download>Download</a></td> <!-- Full path is not required i.e. "csv/ensembl_sigificant.csv"  -->
-      </tr>
-    </tbody>
-  </table>    
+<!-- Table Starts -->
+<?php
+$csv_dir = "csv/";
+$ver_tests = [
+  "Ensemble Result" => "RNAseq_significant.csv",
+  "VER1" => "VER1.csv",
+  "VER2" => "VER2.csv",
+  "VER3" => "VER3.csv"
+];
+?>
+
+<table>
+  <thead>
+    <tr>
+      <th>Serial No.</th>
+      <th>Statistical Tests</th>
+      <th>Download Links</th>
+    </tr>
+  </thead>
+  <tbody>
+    <?php
+    $serial = 1;
+    foreach ($ver_tests as $test_name => $filename) {
+      $filepath = $csv_dir . $filename;
+      echo "<tr>";
+      echo "<td>{$serial}</td>";
+      echo "<td>{$test_name}</td>";
+      echo "<td><a class='download-link' href='{$filepath}' download>Download</a></td>";
+      echo "</tr>";
+      $serial++;
+    }
+    ?>
+  </tbody>
+</table>
+<!-- Table Ends -->    
   </div>
   <div class="body-div">
   <h2>Generated Plots</h2>
