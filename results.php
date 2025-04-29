@@ -54,14 +54,29 @@
   <div class="body-div">
   <h2>Generated Plots</h2>
   <?php
-  $plot_file = "plots/heatmap.png"; // Full path is not required i.e. "plots/heatmap.png"
-  if (!empty($plot_file)) {
-    echo '<p><img src="' . $plot_file . '" alt="Heatmap"></p>';
-    echo '<p>Download the plot: <a style="text-decoration: none; color: black; font-size: 18px; padding: 7px,13px; border-radius: 3px; font-weight: bold; text-align: center;" href="' . $plot_file . '">Download</a></p>';
-  } else {
-    echo '<p>No plot generated.</p>';
-  }
-  ?>
+$plot_dir = "plots/";
+$allowed_extensions = ['png', 'jpg', 'jpeg', 'gif'];
+
+// Scan the directory
+$files = scandir($plot_dir);
+$has_images = false;
+
+foreach ($files as $file) {
+    $file_path = $plot_dir . $file;
+    $file_ext = pathinfo($file, PATHINFO_EXTENSION);
+
+    if (in_array(strtolower($file_ext), $allowed_extensions)) {
+        $has_images = true;
+        echo '<p><img src="' . $file_path . '" alt="Plot Image" style="max-width: 500px; display: block; margin-bottom: 10px;"></p>';
+        echo '<p>Download the plot: <a style="text-decoration: none; color: black; font-size: 18px; padding: 7px 13px; border-radius: 3px; font-weight: bold;" href="' . $file_path . '" download>Download</a></p>';
+    }
+}
+
+if (!$has_images) {
+    echo '<p>No plots found in the folder.</p>';
+}
+?>
+
   </div>
   </div>
 </body>

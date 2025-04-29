@@ -22,7 +22,7 @@ votting_cutoff = as.numeric(arg[7])
 #######____t-test____
 p.value = NULL
 statistic = NULL 
-for(i in 1 : nrow(dataframe)) {
+for(i in seq_len(nrow(dataframe))) {
   x = con[i,] 
   y = exp[i,] 
   t = t.test(x, y)
@@ -31,7 +31,7 @@ for(i in 1 : nrow(dataframe)) {
 }
 
 t_stat = cbind.data.frame(ID=row.names(dataframe),statistic,p.value)
-t_stat$fdr[t_stat$p.value<=(alpha/nrow(t_stat))*seq(length=nrow(t_stat))] <- 1
+t_stat$fdr[t_stat$p.value<=(alpha/nrow(t_stat))*seq_len(nrow(t_stat))] <- 1
 write.csv(as.data.frame(na.omit(t_stat[t_stat$fdr == 1,-ncol(t_stat)])),
           "/var/www/DGEAR/csv/t_stat_significant.csv", row.names = F)
 
@@ -39,9 +39,9 @@ write.csv(as.data.frame(na.omit(t_stat[t_stat$fdr == 1,-ncol(t_stat)])),
 #######____anova-oneway-test____
 p.value = NULL
 statistic = NULL
-group = factor(c(rep("con",length(eval(con1:con2))),rep("tre",length(eval(exp1:exp2)))))
+group <- factor(c(rep("con", length(eval(con1:con2))), rep("tre", length(eval(exp1:exp2)))))
 dataframe=t(dataframe)
-for(i in 1 : ncol(dataframe)) {
+for(i in seq_len(ncol(dataframe))) {
   x = dataframe[,i]
   o = oneway.test(x~group)
   p.value[i] = o$p.value
@@ -49,19 +49,20 @@ for(i in 1 : ncol(dataframe)) {
 }
 dataframe=t(dataframe)
 o_stat = cbind.data.frame(ID=row.names(dataframe),statistic,p.value)
-o_stat$fdr[o_stat$p.value<=(alpha/nrow(o_stat))*seq(length=nrow(o_stat))] <- 1
+o_stat$fdr[o_stat$p.value<=(alpha/nrow(o_stat))*seq_len(nrow(o_stat))] <- 1
 write.csv(as.data.frame(na.omit(o_stat[o_stat$fdr == 1,-ncol(o_stat)])),
           "/var/www/DGEAR/csv/o_stat_significant.csv", row.names = F)
 
 
 #######____Dunnett's test____
-options(warn = - 1)#to ignore warnings globally, set warn = 0 to get back to normal.
+options(warn = - 1) # to ignore warnings globally.
+# set warn = 0 to get back to normal.
 library(DescTools)
 p.value = NULL
 statistic = NULL
 group = factor(c(rep("con",length(eval(con1:con2))),rep("tre",length(eval(exp1:exp2)))))
 dataframe=t(dataframe)
-for(i in 1 : ncol(dataframe)) {
+for(i in seq_len(ncol(dataframe))) {
   x = dataframe[,i]
   d = DescTools::DunnettTest(x,group)
   p.value[i] = d$con[,4]
@@ -69,7 +70,7 @@ for(i in 1 : ncol(dataframe)) {
 }
 dataframe=t(dataframe)
 d_stat = cbind.data.frame(ID=row.names(dataframe),statistic, p.value)
-d_stat$fdr[d_stat$p.value<=(alpha/nrow(d_stat))*seq(length=nrow(d_stat))] <- 1
+d_stat$fdr[d_stat$p.value<=(alpha/nrow(d_stat))*seq_len(nrow(d_stat))] <- 1
 write.csv(as.data.frame(na.omit(d_stat[d_stat$fdr == 1,-ncol(d_stat)])),
           "/var/www/DGEAR/csv/d_stat_significant.csv", row.names = F)
 
@@ -80,11 +81,11 @@ s0 = apply(con, 1, sd)
 sample_size = sqrt((1/ncol(exp))+(1/ncol(con)))
 half_t_stat = data.frame((exp_m-con_m)/(s0*sample_size))
 colnames(half_t_stat)= "statistic"
-for (i in 1:nrow(half_t_stat)) {
+for (i in seq_len(nrow(half_t_stat))) {
   half_t_stat$p.value = 2*pt(abs(half_t_stat$statistic), df=nrow(con)-1, lower.tail = F)
 }
 half_t_stat = cbind.data.frame(ID=row.names(dataframe),half_t_stat)
-half_t_stat$fdr[half_t_stat$p.value<=(alpha/nrow(half_t_stat))*seq(length=nrow(half_t_stat))] <- 1
+half_t_stat$fdr[half_t_stat$p.value<=(alpha/nrow(half_t_stat))*seq_len(nrow(half_t_stat))] <- 1
 write.csv(as.data.frame(na.omit(half_t_stat[half_t_stat$fdr == 1,-ncol(half_t_stat)])),
           "/var/www/DGEAR/csv/half_t_stat_significant.csv", row.names = F)
 
@@ -93,8 +94,8 @@ write.csv(as.data.frame(na.omit(half_t_stat[half_t_stat$fdr == 1,-ncol(half_t_st
 
 #######____Wilcox/Mann-wheitneyU-test____
 p.value = NULL
-statistic = NULL 
-for(i in 1 : nrow(dataframe)) {
+statistic = NULL
+for(i in seq_len(nrow(dataframe))) {
   x = as.numeric(con[i,]) 
   y = as.numeric(exp[i,]) 
   u = wilcox.test(x, y, paired = F)
@@ -103,7 +104,7 @@ for(i in 1 : nrow(dataframe)) {
 }
 
 u_stat = cbind.data.frame(ID=row.names(dataframe),statistic,p.value)
-u_stat$fdr[u_stat$p.value<=(alpha/nrow(u_stat))*seq(length=nrow(u_stat))] <- 1
+u_stat$fdr[u_stat$p.value<=(alpha/nrow(u_stat))*seq_len(nrow(u_stat))] <- 1
 write.csv(as.data.frame(na.omit(u_stat[u_stat$fdr == 1,-ncol(u_stat)])),
           "/var/www/DGEAR/csv/u_stat_significant.csv", row.names = F)
 
@@ -145,3 +146,26 @@ dev.off()
 
 
 #Rscript /var/www/html/webtool/RunCopy.R /var/www/html/webtool/uploads/merged_sep_no_dup-truncated.txt 1 105 106 234 0.005 3
+
+
+
+# GESA with enrichR
+library(enrichR)
+gene_list = row.names(ensembl_significant)
+dbs <- c("GO_Molecular_Function_2015", "GO_Cellular_Component_2015", "GO_Biological_Process_2015")
+enriched = enrichr(gene_list, dbs)
+
+file_name = paste0("/var/www/DGEAR/plots/GO_Enrichment_", names(enriched)[1], ".png")
+png(file_name, width = 1200, height = 800, res = 150)
+plotEnrich(enriched[[1]], title = paste("GO_Enrichment:", names(enriched)[1]),showTerms = 10, numChar = 40, y = "Count", orderBy = "P.value")
+dev.off()
+
+file_name = paste0("/var/www/DGEAR/plots/GO_Enrichment_", names(enriched)[2], ".png")
+png(file_name, width = 1200, height = 800, res = 150)
+plotEnrich(enriched[[2]], title = paste("GO_Enrichment:", names(enriched)[2]),showTerms = 10, numChar = 40, y = "Count", orderBy = "P.value")
+dev.off()
+
+file_name = paste0("/var/www/DGEAR/plots/GO_Enrichment_", names(enriched)[3], ".png")
+png(file_name, width = 1200, height = 800, res = 150)
+plotEnrich(enriched[[3]], title = paste("GO_Enrichment:", names(enriched)[3]),showTerms = 10, numChar = 40, y = "Count", orderBy = "P.value")
+dev.off()

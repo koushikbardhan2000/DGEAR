@@ -552,3 +552,210 @@ null device
 null device
           1
 
+null device 
+          1 
+null device 
+          1 
+2025-04-27 17:54:47 - Executed: /usr/bin/Rscript /var/www/DGEAR/microarray.R /var/www/DGEAR/uploads/Example_microarray_data.txt '1' '134' '135' '234' '0.05' '3' 2>&1 | tee -a /var/www/DGEAR/logs/rscript.log
+Return Code: 0
+Output:
+null device
+          1
+null device
+          1
+
+Error in `[.data.frame`(dataframe, , eval(exp1:exp2)) : 
+  undefined columns selected
+Calls: [ -> [.data.frame
+Execution halted
+2025-04-27 17:55:51 - Executed: /usr/bin/Rscript /var/www/DGEAR/microarray.R /var/www/DGEAR/uploads/Example_microarray_data.txt '1' '134' '135' '235' '0.05' '3' 2>&1 | tee -a /var/www/DGEAR/logs/rscript.log
+Return Code: 0
+Output:
+Error in `[.data.frame`(dataframe, , eval(exp1:exp2)) :
+  undefined columns selected
+Calls: [ -> [.data.frame
+Execution halted
+
+Error in `[.data.frame`(dataframe, , eval(exp1:exp2)) : 
+  undefined columns selected
+Calls: [ -> [.data.frame
+Execution halted
+2025-04-27 17:57:10 - Executed: /usr/bin/Rscript /var/www/DGEAR/microarray.R /var/www/DGEAR/uploads/Example_microarray_data.txt '1' '134' '31' '237' '0.05' '3' 2>&1 | tee -a /var/www/DGEAR/logs/rscript.log
+Return Code: 0
+Output:
+Error in `[.data.frame`(dataframe, , eval(exp1:exp2)) :
+  undefined columns selected
+Calls: [ -> [.data.frame
+Execution halted
+
+null device 
+          1 
+null device 
+          1 
+Welcome to enrichR
+Checking connections ... 
+Enrichr ... Connection is Live!
+FlyEnrichr ... Connection is Live!
+WormEnrichr ... Connection is Live!
+YeastEnrichr ... Connection is Live!
+FishEnrichr ... Connection is Live!
+OxEnrichr ... Connection is Live!
+Error: object 'gene_list' not found
+Execution halted
+2025-04-29 11:02:03 - Executed: /usr/bin/Rscript /var/www/DGEAR/microarray.R /var/www/DGEAR/uploads/Example_microarray_data.txt '1' '134' '135' '234' '0.05' '2' 2>&1 | tee -a /var/www/DGEAR/logs/rscript.log
+Return Code: 0
+Output:
+null device
+          1
+null device
+          1
+Welcome to enrichR
+Checking connections ...
+Enrichr ... Connection is Live!
+FlyEnrichr ... Connection is Live!
+WormEnrichr ... Connection is Live!
+YeastEnrichr ... Connection is Live!
+FishEnrichr ... Connection is Live!
+OxEnrichr ... Connection is Live!
+Error: object 'gene_list' not found
+Execution halted
+
+null device 
+          1 
+null device 
+          1 
+Welcome to enrichR
+Checking connections ... 
+Enrichr ... Connection is Live!
+FlyEnrichr ... Connection is Live!
+WormEnrichr ... Connection is Live!
+YeastEnrichr ... Connection is Live!
+FishEnrichr ... Connection is Live!
+OxEnrichr ... Connection is Live!
+Error in rowSums(df) : 'x' must be numeric
+Calls: row.names -> [ -> [.data.frame -> rowSums
+Execution halted
+2025-04-29 11:07:48 - Executed: /usr/bin/Rscript /var/www/DGEAR/microarray.R /var/www/DGEAR/uploads/Example_microarray_data.txt '1' '134' '135' '234' '0.05' '3' 2>&1 | tee -a /var/www/DGEAR/logs/rscript.log
+Return Code: 0
+Output:
+null device
+          1
+null device
+          1
+Welcome to enrichR
+Checking connections ...
+Enrichr ... Connection is Live!
+FlyEnrichr ... Connection is Live!
+WormEnrichr ... Connection is Live!
+YeastEnrichr ... Connection is Live!
+FishEnrichr ... Connection is Live!
+OxEnrichr ... Connection is Live!
+Error in rowSums(df) : 'x' must be numeric
+Calls: row.names -> [ -> [.data.frame -> rowSums
+Execution halted
+
+null device 
+          1 
+null device 
+          1 
+Welcome to enrichR
+Checking connections ... 
+Enrichr ... Connection is Live!
+FlyEnrichr ... Connection is Live!
+WormEnrichr ... Connection is Live!
+YeastEnrichr ... Connection is Live!
+FishEnrichr ... Connection is Live!
+OxEnrichr ... Connection is Live!
+Error in rowSums(df) : 'x' must be numeric
+Calls: as.data.frame -> row.names -> [ -> [.data.frame -> rowSums
+Execution halted
+2025-04-29 11:16:00 - Executed: /usr/bin/Rscript /var/www/DGEAR/microarray.R /var/www/DGEAR/uploads/Example_microarray_data.txt '1' '134' '135' '234' '0.05' '2' 2>&1 | tee -a /var/www/DGEAR/logs/rscript.log
+Return Code: 0
+Output:
+null device
+          1
+null device
+          1
+Welcome to enrichR
+Checking connections ...
+Enrichr ... Connection is Live!
+FlyEnrichr ... Connection is Live!
+WormEnrichr ... Connection is Live!
+YeastEnrichr ... Connection is Live!
+FishEnrichr ... Connection is Live!
+OxEnrichr ... Connection is Live!
+Error in rowSums(df) : 'x' must be numeric
+Calls: as.data.frame -> row.names -> [ -> [.data.frame -> rowSums
+Execution halted
+
+null device 
+          1 
+null device 
+          1 
+Welcome to enrichR
+Checking connections ... 
+Enrichr ... Connection is Live!
+FlyEnrichr ... Connection is Live!
+WormEnrichr ... Connection is Live!
+YeastEnrichr ... Connection is Live!
+FishEnrichr ... Connection is Live!
+OxEnrichr ... Connection is Live!
+Uploading data to Enrichr... Done.
+  Querying GO_Molecular_Function_2015... Done.
+  Querying GO_Cellular_Component_2015... Done.
+  Querying GO_Biological_Process_2015... Done.
+Parsing results... Done.
+Error in grid.newpage() : 
+  could not open file '/var/www/DGEAR/plots/GO Enrichment_GO_Molecular_Function_2015.png'
+Calls: <Anonymous> -> print.ggplot -> grid.newpage
+Execution halted
+null device 
+          1 
+null device 
+          1 
+Welcome to enrichR
+Checking connections ... 
+Enrichr ... Connection is Live!
+FlyEnrichr ... Connection is Live!
+WormEnrichr ... Connection is Live!
+YeastEnrichr ... Connection is Live!
+FishEnrichr ... Connection is Live!
+OxEnrichr ... Connection is Live!
+Uploading data to Enrichr... Done.
+  Querying GO_Molecular_Function_2015... Done.
+  Querying GO_Cellular_Component_2015... Done.
+  Querying GO_Biological_Process_2015... Done.
+Parsing results... Done.
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+2025-04-29 11:33:50 - Executed: /usr/bin/Rscript /var/www/DGEAR/microarray.R /var/www/DGEAR/uploads/Example_microarray_data.txt '1' '134' '135' '234' '0.05' '3' 2>&1 | tee -a /var/www/DGEAR/logs/rscript.log
+Return Code: 0
+Output:
+null device
+          1
+null device
+          1
+Welcome to enrichR
+Checking connections ...
+Enrichr ... Connection is Live!
+FlyEnrichr ... Connection is Live!
+WormEnrichr ... Connection is Live!
+YeastEnrichr ... Connection is Live!
+FishEnrichr ... Connection is Live!
+OxEnrichr ... Connection is Live!
+Uploading data to Enrichr... Done.
+  Querying GO_Molecular_Function_2015... Done.
+  Querying GO_Cellular_Component_2015... Done.
+  Querying GO_Biological_Process_2015... Done.
+Parsing results... Done.
+null device
+          1
+null device
+          1
+null device
+          1
+
