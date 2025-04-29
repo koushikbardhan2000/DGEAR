@@ -8,7 +8,7 @@
 <?php include 'header.php';?>
 <body>
 	<div class="body-div">
-	    <h1>Welcome to DGEAR-Web Dashboard for Differential Gene Expression Analysis</h1>
+	    <h1>Welcome to DGEAR-Web Dashboard</h1>
         <p>DEG-Ensembl is a web-based platform designed for ensemble-based integrative analysis, enabling the prediction of differentially expressed genes (DEGs) from gene expression data. The tool enhances the usability and accessibility of bioinformatics analysis for researchers, scientists, and other users in the field.</p>
         <img class="embedded-img" src="img/Architecture.jpg" alt="Architecture of DGEAR Web-tool">
         <h2>Key Features</h2>
@@ -19,8 +19,8 @@
             <li><strong>Efficiency and Time-Saving:</strong> GUI-based tools streamline the bioinformatics analysis process, reducing the time and effort required for data preprocessing.</li>
         </ul>
         
-        <h2>Project Background</h2>
-        <p>This web tool was developed as part of the project titled <em>"To Develop an Ensemble Framework for Differential Expression Analysis."</em> It was submitted to the <strong>University of North Bengal</strong> in partial fulfillment of the requirements for the <strong>Master of Science in Bioinformatics</strong> by <strong>Koushik Bardhan (2022-2023)</strong>, under the supervision and guidance of <strong>Dr. Chiranjib Sarkar</strong>, Department of Bioinformatics, University of North Bengal, West Bengal.</p>
+        <!-- <h2>Project Background</h2>
+        <p>This web tool was developed as part of the project titled <em>"To Develop an Ensemble Framework for Differential Expression Analysis."</em> It was submitted to the <strong>University of North Bengal</strong> in partial fulfillment of the requirements for the <strong>Master of Science in Bioinformatics</strong> by <strong>Koushik Bardhan (2022-2023)</strong>, under the supervision and guidance of <strong>Dr. Chiranjib Sarkar</strong>, Department of Bioinformatics, University of North Bengal, West Bengal.</p> -->
         
         <h2>User Instructions</h2>
         <img class="embedded-img" src="img/userguide.jpg" alt="User Guide for DGEAR Web-tool">
@@ -52,7 +52,7 @@
             <li>Navigate through the <strong>Results Page</strong> to explore content, view plots, and access downloadable files or available resources.</li>
         </ul>
         
-        <p>By following these steps, users can efficiently perform differential expression analysis and extract meaningful insights from their gene expression data. Enjoy using DEGEAR-web for your bioinformatics research!</p>
+        <p>To know more <a href="https://compbiosysnbu.in/DGEAR/manual.php">visit manual</a> page or download <a href="http://compbiosysnbu.in/DGEAR/User-Manual.pdf" download>User Manual</a>. By following these steps, users can efficiently perform differential expression analysis and extract meaningful insights from their gene expression data. Enjoy using DEGEAR-web for your bioinformatics research!</p>
     </div>
 </body>
 </html>

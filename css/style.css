@@ -20,11 +20,30 @@ body {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
 }
 
+@media  (max-width: 768px) {
+  .body-div {
+    width: 90%;
+    margin: 0px auto; 
+    padding: 20px; 
+    border-radius: 0px;
+    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4); */
+  }
+}
+
 .embedded-img {
   width: 80%;
   display: block;
   height: auto;
   margin: 0 auto;
+}
+
+@media  (max-width: 768px) {
+  .embedded-img {
+    width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+  }
 }
 
 h1 {
@@ -40,7 +59,10 @@ h3 {
   text-align: center;
   font-size: 24px;
 }
-
+h4 {
+  text-align: left;
+  font-size: 24px;
+}
 p, li {
   text-align: justify;
   font-size: 16px;
@@ -371,6 +393,13 @@ th {
   background-color: #f2f2f2;
 }
 
+@media screen and (max-width: 768px) {
+  table, th, td {
+    font-size: 14px;
+    padding: 5px;
+  }
+}
+
 
 
 /* results page plots gallery */
@@ -446,4 +475,11 @@ th {
     font-size: 14px;
     padding: 6px 12px;
   }
+}
+
+/* maanual page  */
+.toc li a{
+  text-decoration: none;
+  color:#4771e6;
+  
 }

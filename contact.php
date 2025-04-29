@@ -32,7 +32,7 @@
   <div class="body-div">
   <h3>Contact Us</h3>
   <p><strong>Contact No.:</strong> +91 353 2699117</p>
-  <p><strong>Email:</strong> <a href="mailto:bifnbuinfo@gmail.com">bifnbuinfo@gmail.com</a> | <a href="mailto:koushikbardhan2000@gmail.com">koushikbardhan2000@gmail.com</a></p>
+  <p><strong>Email:</strong> koushikbardhan2000@gmail.com</p>
   <p><strong>Location:</strong> Department of Bioinformatics, University of North Bengal, Siliguri, Darjeeling, West Bengal, India</p>
   </div>
 	<div class="body-div">    
