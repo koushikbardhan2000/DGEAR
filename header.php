@@ -1,3 +1,6 @@
+<meta name="author" content="Koushik Bardhan">
+<meta name="keywords" content="DGEAR, Differential Gene Expression Analysis, Bioinformatics, Web Tool">
+<meta name="robots" content="index, follow">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="shortcut icon" href="img/logo.png" alt="DGEAR icon">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">

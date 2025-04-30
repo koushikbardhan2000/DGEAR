@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DGEAR-Web is a web-based platform designed for ensemble-based integrative analysis, enabling the prediction of differentially expressed genes (DEGs) from gene expression data.">
+  <link rel="canonical" href="https://compbiosysnbu.in/DGEAR/contact.php">
   <title>DGEAR-Web | CONTACT US</title>
 </head>
 <?php include 'header.php';?>
