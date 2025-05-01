@@ -19,6 +19,17 @@ alpha = as.numeric(arg[6])
 votting_cutoff = as.numeric(arg[7])
 
 
+
+options(warn = - 1) # to ignore warnings globally.
+# set warn = 0 to get back to normal.
+#libraries
+suppressMessages({
+  library("DescTools")
+  library("enrichR")
+  library("STRINGdb")
+  library("igraph")
+})
+
 #######____t-test____
 p.value = NULL
 statistic = NULL 
@@ -55,9 +66,6 @@ write.csv(as.data.frame(na.omit(o_stat[o_stat$fdr == 1,-ncol(o_stat)])),
 
 
 #######____Dunnett's test____
-options(warn = - 1) # to ignore warnings globally.
-# set warn = 0 to get back to normal.
-library(DescTools)
 p.value = NULL
 statistic = NULL
 group = factor(c(rep("con",length(eval(con1:con2))),rep("tre",length(eval(exp1:exp2)))))
@@ -150,7 +158,7 @@ dev.off()
 
 
 # GESA with enrichR
-library(enrichR)
+# library(enrichR)
 gene_list = row.names(ensembl_significant)
 dbs <- c("GO_Molecular_Function_2015", "GO_Cellular_Component_2015", "GO_Biological_Process_2015")
 enriched = enrichr(gene_list, dbs)
@@ -168,4 +176,46 @@ dev.off()
 file_name = paste0("/var/www/DGEAR/plots/GO_Enrichment_", names(enriched)[3], ".png")
 png(file_name, width = 1200, height = 800, res = 150)
 plotEnrich(enriched[[3]], title = paste("GO_Enrichment:", names(enriched)[3]),showTerms = 10, numChar = 40, y = "Count", orderBy = "P.value")
+dev.off()
+
+
+
+#############################################
+# PPI with STRINGdb (online version)
+#############################################
+# Load necessary libraries
+# library(STRINGdb)
+# library(igraph)
+
+# gene list dataframe for STRINGdb
+gene_list <- data.frame(genes = row.names(ensembl_significant)[1:min(50, nrow(ensembl_significant))])
+# Initialize STRINGdb and map genes
+string_db <- STRINGdb$new(version="11.5", species=9606, score_threshold=400, input_directory="")
+mapped_data <- string_db$map(gene_list, "genes", removeUnmappedRows = TRUE)
+
+# Get PPI interactions
+ppi_network <- string_db$get_interactions(mapped_data$STRING_id)
+
+# Build igraph object
+ppi_graph <- graph_from_data_frame(ppi_network, directed = FALSE)
+
+# Replace STRING IDs with gene symbols
+V(ppi_graph)$label <- mapped_data$genes[match(V(ppi_graph)$name, mapped_data$STRING_id)]
+
+# Compute node degree centrality
+V(ppi_graph)$degree <- degree(ppi_graph)
+
+# Set color and size by degree
+V(ppi_graph)$color <- heat.colors(max(V(ppi_graph)$degree) + 1)[V(ppi_graph)$degree + 1]
+V(ppi_graph)$size <- 5 + V(ppi_graph)$degree * 2
+
+# Plot using igraph
+png("/var/www/DGEAR/plots/PPI_network_igraph.png", width = 1200, height = 800, res = 150)
+plot(ppi_graph,
+     vertex.label = V(ppi_graph)$label,
+     vertex.label.cex = 0.8,
+     vertex.label.dist = 0.5,
+     vertex.label.color = "black",
+     vertex.frame.color = "white",
+     layout = layout_with_fr(ppi_graph))
 dev.off()
