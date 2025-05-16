@@ -10,30 +10,30 @@
 <?php include 'header.php';?>
 <body>
   <div class="body-div">      
-	<h3>Let's Get in Touch</h3>
-  <form action="#" method="post" enctype="multipart/form-data">
-	
+<h3>Let's Get in Touch</h3>
+<form action="submit_form.php" method="post" enctype="multipart/form-data">
     <label for="name">Your Name:</label>
     <input type="text" id="name" name="name" required>
-    
+
     <label for="email">Your Email:</label>
     <input type="email" id="email" name="email" required>
-    
+
     <label for="phone">Your Mobile / Phone:</label>
     <input type="tel" id="phone" name="phone">
-    
+
     <label for="attachment">Attachment (if any):</label>
     <input type="file" id="attachment" name="attachment">
-    
+
     <label for="message">Message:</label>
     <textarea id="message" name="message" rows="5" required></textarea>
-    
+
     <button type="submit">Submit</button>
-  </form>
+</form>
+
   </div>
   <div class="body-div">
   <h3>Contact Us</h3>
-  <p><strong>Contact No.:</strong> +91 353 2699117</p>
+  <p><strong>Contact No.:</strong> +91 8436326500</p>
   <p><strong>Email:</strong> koushikbardhan2000@gmail.com</p>
   <p><strong>Location:</strong> Department of Bioinformatics, University of North Bengal, Siliguri, Darjeeling, West Bengal, India</p>
   </div>
