@@ -3,7 +3,7 @@
   
 <p>
   &copy;2024-2025 DGEAR-Web All rights reserved by Computational System Biology Lab | Department of Bioinformatics.<br>
-  Last updated on: <span id="lastUpdated"></span>
+  Last update date: <span id="lastUpdated"></span>
 </p>
 
 <script>
