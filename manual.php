@@ -149,35 +149,35 @@
     </thead>
     <tbody>
     <tr>
-    <td>100287102</td>
+    <td>A1BG</td>
     <td>3</td>
     <td>3</td>
     <td>3</td>
     <td>1</td>
     </tr>
     <tr>
-    <td>653635</td>
+    <td>A1CF</td>
     <td>367</td>
     <td>333</td>
     <td>249</td>
     <td>277</td>
     </tr>
     <tr>
-    <td>102466751</td>
+    <td>A2M</td>
     <td>9</td>
     <td>12</td>
     <td>4</td>
     <td>10</td>
     </tr>
     <tr>
-    <td>107985730</td>
+    <td>A2ML1</td>
     <td>1</td>
     <td>1</td>
     <td>0</td>
     <td>0</td>
     </tr>
     <tr>
-    <td>100302278</td>
+    <td>A4GALT</td>
     <td>0</td>
     <td>0</td>
     <td>0</td>

@@ -49,11 +49,21 @@ body {
 /* YT video embedding */
 iframe {
   aspect-ratio: 16/9!important;
-  width: 70%!important;
+  width: 80%!important;
   height: auto;
   border: none;
   display: block;
   margin: 0 auto;
+}
+@media  (max-width: 768px) {
+  iframe {
+    aspect-ratio: 16/9!important;
+    width: 100%!important;
+    height: auto;
+    border: none;
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 /* Header */

@@ -1409,3 +1409,55 @@ downloaded 69.3 MB
 null device
           1
 
+estimating size factors
+estimating dispersions
+gene-wise dispersion estimates
+mean-dispersion relationship
+final dispersion estimates
+fitting model and testing
+Welcome to enrichR
+Checking connections ... 
+Enrichr ... Connection is Live!
+FlyEnrichr ... Connection is Live!
+WormEnrichr ... Connection is Live!
+YeastEnrichr ... Connection is Live!
+FishEnrichr ... Connection is Live!
+OxEnrichr ... Connection is Live!
+Uploading data to Enrichr... Genes must be a character vector of Entrez gene symbols or a data.frame with gene symbols and/or score
+Done.
+  Querying GO_Molecular_Function_2015... Done.
+  Querying GO_Cellular_Component_2015... Done.
+  Querying GO_Biological_Process_2015... Done.
+Parsing results... Done.
+Error in `$<-.data.frame`(`*tmp*`, "Significant", value = numeric(0)) : 
+  replacement has 0 rows, data has 2
+Calls: plotEnrich -> .enrichment_prep_df -> $<- -> $<-.data.frame
+Execution halted
+2025-05-21 11:13:12 - Executed: /usr/bin/Rscript /var/www/DGEAR/rnaseq.R /var/www/DGEAR/uploads/Example_RNA-seq_data.tsv '1' '2' '3' '4' '0.05' '2' 2>&1 | tee -a /var/www/DGEAR/logs/rscript.log
+Return Code: 0
+Output:
+estimating size factors
+estimating dispersions
+gene-wise dispersion estimates
+mean-dispersion relationship
+final dispersion estimates
+fitting model and testing
+Welcome to enrichR
+Checking connections ...
+Enrichr ... Connection is Live!
+FlyEnrichr ... Connection is Live!
+WormEnrichr ... Connection is Live!
+YeastEnrichr ... Connection is Live!
+FishEnrichr ... Connection is Live!
+OxEnrichr ... Connection is Live!
+Uploading data to Enrichr... Genes must be a character vector of Entrez gene symbols or a data.frame with gene symbols and/or score
+Done.
+  Querying GO_Molecular_Function_2015... Done.
+  Querying GO_Cellular_Component_2015... Done.
+  Querying GO_Biological_Process_2015... Done.
+Parsing results... Done.
+Error in `$<-.data.frame`(`*tmp*`, "Significant", value = numeric(0)) :
+  replacement has 0 rows, data has 2
+Calls: plotEnrich -> .enrichment_prep_df -> $<- -> $<-.data.frame
+Execution halted
+
