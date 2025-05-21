@@ -49,9 +49,11 @@ body {
 /* YT video embedding */
 iframe {
   aspect-ratio: 16/9!important;
-  width: 100%!important;
+  width: 70%!important;
   height: auto;
   border: none;
+  display: block;
+  margin: 0 auto;
 }
 
 /* Header */

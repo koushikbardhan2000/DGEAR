@@ -52,6 +52,7 @@
     <h2 id="architecture-overview">Architecture Overview</h2>
 
     <p>DGEAR-Web is designed with the following key principles:</p>
+    <img class="embedded-img" src="img/Architecture.jpg" alt="Architecture of DGEAR Web-tool">
 
     <p>
     <strong>Cross-Platform Compatibility</strong>: Accessible across Windows, macOS, Linux, and mobile devices through any modern web browser.
