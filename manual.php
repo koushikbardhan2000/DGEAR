@@ -48,7 +48,7 @@
     <h2 id="introduction">Introduction</h2>
 
     <p>Welcome to DGEAR-Web, an intuitive web-based platform for ensemble-based differential gene expression analysis. DGEAR empowers researchers, scientists, and users from varied backgrounds to perform complex DEG (Differentially Expressed Genes) predictions from gene expression data through a user-friendly, GUI-driven environment.</p>
-
+    <iframe src="https://www.youtube.com/embed/C32FZBWKDaQ?si=5xehmUzVCBH0NxZ3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><!-- HTML: Embed YouTube video -->        
     <h2 id="architecture-overview">Architecture Overview</h2>
 
     <p>DGEAR-Web is designed with the following key principles:</p>
@@ -199,7 +199,7 @@
     <h2 id="1-opening-the-web-tool">1. Reaching the Web-Tool</h2>
 
     <p>
-    Visit <a href="https://compbiosysnbu.in/DGEAR/">https://compbiosysnbu.in/DGEAR/.</a> Ensure your browser supports JavaScript and cookies for optimal performance. Bookmark the URL for quick access in the future. To download the User Manual, <a href="https://compbiosysnbu.in/DGEAR/User-Manual.pdf" download>click here</a>!
+    Visit <a href="https://dgear.compbiosysnbu.in/">https://dgear.compbiosysnbu.in/.</a> Ensure your browser supports JavaScript and cookies for optimal performance. Bookmark the URL for quick access in the future. To download the User Manual, <a href="https://compbiosysnbu.in/DGEAR/User-Manual.pdf" download>click here</a>!
     </p>
 
     <h2 id="2-navigation">2. Navigation</h2>
@@ -208,6 +208,7 @@
     Use the navigation panel at the top or bottom. Sections include:
         <ul>
         <li>Home</li>
+        <li>Manual</li>
         <li>Analysis</li>
         <li>Results</li>
         <li>Contact</li>

@@ -9,6 +9,7 @@
   <ul class="sidebar">
     <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
     <li><a href="index.php">Home</a></li>
+    <li><a href="manual.php">Manual</a></li>
     <li><a href="analysis.php">Analysis</a></li>
     <li><a href="results.php">Results</a></li>
     <li><a href="contact.php">Contact Us</a></li>
@@ -19,6 +20,7 @@
         </a>
     </li>
     <li class="hideOnMobile"><a href="index.php">Home</a></li>
+    <li class="hideOnMobile"><a href="manual.php">Manual</a></li>
     <li class="hideOnMobile"><a href="analysis.php">Analysis</a></li>
     <li class="hideOnMobile"><a href="results.php">Results</a></li>
     <li class="hideOnMobile"><a href="contact.php">Contact Us</a></li>
