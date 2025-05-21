@@ -83,10 +83,10 @@
     <thead>
     <tr>
     <th>ID</th>
-    <th>ctl1</th>
-    <th>ctl2</th>
-    <th>exp1</th>
-    <th>exp2</th>
+    <th>Control1</th>
+    <th>Control2</th>
+    <th>Experiment1</th>
+    <th>Experiment2</th>
     </tr>
     </thead>
     <tbody>
@@ -141,10 +141,10 @@
     <thead>
     <tr>
     <th>GeneID</th>
-    <th>ctl1</th>
-    <th>ctl2</th>
-    <th>exp1</th>
-    <th>exp2</th>
+    <th>Control1</th>
+    <th>Control2</th>
+    <th>Experiment1</th>
+    <th>Experiment2</th>
     </tr>
     </thead>
     <tbody>
