@@ -53,7 +53,8 @@
         <ul>
             <li>Navigate through the <strong>Results Page</strong> to explore content, view plots, and access downloadable files or available resources.</li>
         </ul>
-        
+        <!-- HTML: Embed YouTube video -->
+        <iframe src="https://www.youtube.com/embed/C32FZBWKDaQ?si=5xehmUzVCBH0NxZ3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><!-- HTML: Embed YouTube video -->        
         <p>To know more <a href="https://compbiosysnbu.in/DGEAR/manual.php">visit manual</a> page or download <a href="http://compbiosysnbu.in/DGEAR/User-Manual.pdf" download>User Manual</a>. By following these steps, users can efficiently perform differential expression analysis and extract meaningful insights from their gene expression data. Enjoy using DEGEAR-web for your bioinformatics research!</p>
     </div>
 </body>

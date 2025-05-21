@@ -46,6 +46,15 @@ body {
   }
 }
 
+/* YT video embedding */
+iframe {
+  aspect-ratio: 16/9!important;
+  width: 100%!important;
+  height: auto;
+  border: none;
+}
+
+/* Header */
 h1 {
   text-align: left;
   font-size: 24px;
