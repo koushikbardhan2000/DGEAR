@@ -1731,3 +1731,31 @@ Error in `$<-.data.frame`(`*tmp*`, "Significant", value = numeric(0)) :
 Calls: plotEnrich -> .enrichment_prep_df -> $<- -> $<-.data.frame
 Execution halted
 
+null device 
+          1 
+null device 
+          1 
+Uploading data to Enrichr... Done.
+  Querying GO_Molecular_Function_2015... Done.
+  Querying GO_Cellular_Component_2015... Done.
+  Querying GO_Biological_Process_2015... Done.
+Parsing results... Done.
+Error in plotEnrich(enriched[[1]], title = paste("GO_Enrichment:", names(enriched)[1]),  : 
+  Input df is empty.
+Execution halted
+2025-08-28 07:39:53 - Executed: /usr/bin/Rscript /var/www/DGEAR/microarray.R /var/www/DGEAR/uploads/Example_microarray_data.txt '1' '2' '3' '4' '0.05' '3' 2>&1 | tee -a /var/www/DGEAR/logs/rscript.log
+Return Code: 0
+Output:
+null device
+          1
+null device
+          1
+Uploading data to Enrichr... Done.
+  Querying GO_Molecular_Function_2015... Done.
+  Querying GO_Cellular_Component_2015... Done.
+  Querying GO_Biological_Process_2015... Done.
+Parsing results... Done.
+Error in plotEnrich(enriched[[1]], title = paste("GO_Enrichment:", names(enriched)[1]),  :
+  Input df is empty.
+Execution halted
+

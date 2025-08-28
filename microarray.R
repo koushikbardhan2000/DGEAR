@@ -160,7 +160,9 @@ dev.off()
 # GESA with enrichR
 # library(enrichR)
 gene_list = row.names(ensembl_significant)
-dbs <- c("GO_Molecular_Function_2015", "GO_Cellular_Component_2015", "GO_Biological_Process_2015")
+dbs <- c("GO_Molecular_Function_2021",
+         "GO_Cellular_Component_2021",
+         "GO_Biological_Process_2021")
 enriched = enrichr(gene_list, dbs)
 
 file_name = paste0("/var/www/DGEAR/plots/GO_Enrichment_", names(enriched)[1], ".png")
