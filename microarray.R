@@ -188,7 +188,7 @@ dev.off()
 # library(igraph)
 
 # gene list dataframe for STRINGdb
-gene_list <- data.frame(genes = row.names(ensembl_significant)[1:min(50, nrow(ensembl_significant))])
+gene_list <- data.frame(genes = row.names(ensembl_significant)[seq_len(min(50, nrow(ensembl_significant)))])
 # [1:min(50, nrow(ensembl_significant))] only build upto 50 genes ppi network
 # Initialize STRINGdb and map genes
 string_db <- STRINGdb$new(version="11.5", species=9606, score_threshold=400, input_directory="")

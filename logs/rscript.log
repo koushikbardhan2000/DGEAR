@@ -1461,3 +1461,273 @@ Error in `$<-.data.frame`(`*tmp*`, "Significant", value = numeric(0)) :
 Calls: plotEnrich -> .enrichment_prep_df -> $<- -> $<-.data.frame
 Execution halted
 
+Error in file(file, "rt") : cannot open the connection
+Calls: data.frame -> read.delim -> read.table -> file
+In addition: Warning messages:
+1: In file(file, "rt") :
+  'raw = FALSE' but '/var/www/DGEAR/uploads/' is not a regular file
+2: In file(file, "rt") :
+  cannot open file '/var/www/DGEAR/uploads/': it is a directory
+Execution halted
+2025-06-05 12:44:51 - Executed: /usr/bin/Rscript /var/www/DGEAR/microarray.R /var/www/DGEAR/uploads/ '' '' '' '' '' '' 2>&1 | tee -a /var/www/DGEAR/logs/rscript.log
+Return Code: 0
+Output:
+Error in file(file, "rt") : cannot open the connection
+Calls: data.frame -> read.delim -> read.table -> file
+In addition: Warning messages:
+1: In file(file, "rt") :
+  'raw = FALSE' but '/var/www/DGEAR/uploads/' is not a regular file
+2: In file(file, "rt") :
+  cannot open file '/var/www/DGEAR/uploads/': it is a directory
+Execution halted
+
+Error in file(file, "rt") : cannot open the connection
+Calls: read.delim -> read.table -> file
+In addition: Warning messages:
+1: In file(file, "rt") :
+  'raw = FALSE' but '/var/www/DGEAR/uploads/' is not a regular file
+2: In file(file, "rt") :
+  cannot open file '/var/www/DGEAR/uploads/': it is a directory
+Execution halted
+2025-06-13 10:55:06 - Executed: /usr/bin/Rscript /var/www/DGEAR/rnaseq.R /var/www/DGEAR/uploads/ '' '' '' '' '' '' 2>&1 | tee -a /var/www/DGEAR/logs/rscript.log
+Return Code: 0
+Output:
+Error in file(file, "rt") : cannot open the connection
+Calls: read.delim -> read.table -> file
+In addition: Warning messages:
+1: In file(file, "rt") :
+  'raw = FALSE' but '/var/www/DGEAR/uploads/' is not a regular file
+2: In file(file, "rt") :
+  cannot open file '/var/www/DGEAR/uploads/': it is a directory
+Execution halted
+
+Error in file(file, "rt") : cannot open the connection
+Calls: data.frame -> read.delim -> read.table -> file
+In addition: Warning messages:
+1: In file(file, "rt") :
+  'raw = FALSE' but '/var/www/DGEAR/uploads/' is not a regular file
+2: In file(file, "rt") :
+  cannot open file '/var/www/DGEAR/uploads/': it is a directory
+Execution halted
+2025-06-14 23:27:19 - Executed: /usr/bin/Rscript /var/www/DGEAR/microarray.R /var/www/DGEAR/uploads/ '' '' '' '' '' '' 2>&1 | tee -a /var/www/DGEAR/logs/rscript.log
+Return Code: 0
+Output:
+Error in file(file, "rt") : cannot open the connection
+Calls: data.frame -> read.delim -> read.table -> file
+In addition: Warning messages:
+1: In file(file, "rt") :
+  'raw = FALSE' but '/var/www/DGEAR/uploads/' is not a regular file
+2: In file(file, "rt") :
+  cannot open file '/var/www/DGEAR/uploads/': it is a directory
+Execution halted
+
+null device 
+          1 
+null device 
+          1 
+Uploading data to Enrichr... Done.
+  Querying GO_Molecular_Function_2015... Done.
+  Querying GO_Cellular_Component_2015... Done.
+  Querying GO_Biological_Process_2015... Done.
+Parsing results... Done.
+Error in plotEnrich(enriched[[1]], title = paste("GO_Enrichment:", names(enriched)[1]),  : 
+  Input df is empty.
+Execution halted
+2025-06-21 09:21:45 - Executed: /usr/bin/Rscript /var/www/DGEAR/microarray.R /var/www/DGEAR/uploads/Example_microarray_data.txt '1' '2' '3' '4' '0.05' '3' 2>&1 | tee -a /var/www/DGEAR/logs/rscript.log
+Return Code: 0
+Output:
+null device
+          1
+null device
+          1
+Uploading data to Enrichr... Done.
+  Querying GO_Molecular_Function_2015... Done.
+  Querying GO_Cellular_Component_2015... Done.
+  Querying GO_Biological_Process_2015... Done.
+Parsing results... Done.
+Error in plotEnrich(enriched[[1]], title = paste("GO_Enrichment:", names(enriched)[1]),  :
+  Input df is empty.
+Execution halted
+
+Error in file(file, "rt") : cannot open the connection
+Calls: read.delim -> read.table -> file
+In addition: Warning messages:
+1: In file(file, "rt") :
+  'raw = FALSE' but '/var/www/DGEAR/uploads/' is not a regular file
+2: In file(file, "rt") :
+  cannot open file '/var/www/DGEAR/uploads/': it is a directory
+Execution halted
+2025-07-16 03:43:08 - Executed: /usr/bin/Rscript /var/www/DGEAR/rnaseq.R /var/www/DGEAR/uploads/ '' '' '' '' '' '' 2>&1 | tee -a /var/www/DGEAR/logs/rscript.log
+Return Code: 0
+Output:
+Error in file(file, "rt") : cannot open the connection
+Calls: read.delim -> read.table -> file
+In addition: Warning messages:
+1: In file(file, "rt") :
+  'raw = FALSE' but '/var/www/DGEAR/uploads/' is not a regular file
+2: In file(file, "rt") :
+  cannot open file '/var/www/DGEAR/uploads/': it is a directory
+Execution halted
+
+Error in heatmap(ensembl_significant, cexRow = 0.7, cexCol = 1, main = "Heatmap_",  : 
+  'x' must have at least 2 rows and 2 columns
+Execution halted
+2025-08-18 11:50:34 - Executed: /usr/bin/Rscript /var/www/DGEAR/microarray.R /var/www/DGEAR/uploads/Example_microarray_data.txt '1' '2' '3' '4' '0.05' '5' 2>&1 | tee -a /var/www/DGEAR/logs/rscript.log
+Return Code: 0
+Output:
+Error in heatmap(ensembl_significant, cexRow = 0.7, cexCol = 1, main = "Heatmap_",  :
+  'x' must have at least 2 rows and 2 columns
+Execution halted
+
+Error in model.frame.default(formula = x ~ group) : 
+  variable lengths differ (found for 'group')
+Calls: oneway.test -> eval -> eval -> <Anonymous> -> model.frame.default
+Execution halted
+2025-08-22 09:54:58 - Executed: /usr/bin/Rscript /var/www/DGEAR/microarray.R /var/www/DGEAR/uploads/Example_microarray.txt '1' '2' '3' '4' '0.05' '3' 2>&1 | tee -a /var/www/DGEAR/logs/rscript.log
+Return Code: 0
+Output:
+Error in model.frame.default(formula = x ~ group) :
+  variable lengths differ (found for 'group')
+Calls: oneway.test -> eval -> eval -> <Anonymous> -> model.frame.default
+Execution halted
+
+Error in model.frame.default(formula = x ~ group) : 
+  variable lengths differ (found for 'group')
+Calls: oneway.test -> eval -> eval -> <Anonymous> -> model.frame.default
+Execution halted
+2025-08-22 18:47:18 - Executed: /usr/bin/Rscript /var/www/DGEAR/microarray.R /var/www/DGEAR/uploads/Example_microarray.txt '1' '2' '3' '4' '0.05' '2' 2>&1 | tee -a /var/www/DGEAR/logs/rscript.log
+Return Code: 0
+Output:
+Error in model.frame.default(formula = x ~ group) :
+  variable lengths differ (found for 'group')
+Calls: oneway.test -> eval -> eval -> <Anonymous> -> model.frame.default
+Execution halted
+
+estimating size factors
+estimating dispersions
+gene-wise dispersion estimates
+mean-dispersion relationship
+final dispersion estimates
+fitting model and testing
+Welcome to enrichR
+Checking connections ... 
+Enrichr ... Connection is Live!
+FlyEnrichr ... Connection is Live!
+WormEnrichr ... Connection is Live!
+YeastEnrichr ... Connection is Live!
+FishEnrichr ... Connection is Live!
+OxEnrichr ... Connection is Live!
+Uploading data to Enrichr... Genes must be a character vector of Entrez gene symbols or a data.frame with gene symbols and/or score
+Done.
+  Querying GO_Molecular_Function_2015... Done.
+  Querying GO_Cellular_Component_2015... Done.
+  Querying GO_Biological_Process_2015... Done.
+Parsing results... Done.
+Error in `$<-.data.frame`(`*tmp*`, "Significant", value = numeric(0)) : 
+  replacement has 0 rows, data has 2
+Calls: plotEnrich -> .enrichment_prep_df -> $<- -> $<-.data.frame
+Execution halted
+2025-08-27 05:32:52 - Executed: /usr/bin/Rscript /var/www/DGEAR/rnaseq.R /var/www/DGEAR/uploads/1Example_RNA-seq_data.tsv '1' '2' '3' '4' '0.05' '2' 2>&1 | tee -a /var/www/DGEAR/logs/rscript.log
+Return Code: 0
+Output:
+estimating size factors
+estimating dispersions
+gene-wise dispersion estimates
+mean-dispersion relationship
+final dispersion estimates
+fitting model and testing
+Welcome to enrichR
+Checking connections ...
+Enrichr ... Connection is Live!
+FlyEnrichr ... Connection is Live!
+WormEnrichr ... Connection is Live!
+YeastEnrichr ... Connection is Live!
+FishEnrichr ... Connection is Live!
+OxEnrichr ... Connection is Live!
+Uploading data to Enrichr... Genes must be a character vector of Entrez gene symbols or a data.frame with gene symbols and/or score
+Done.
+  Querying GO_Molecular_Function_2015... Done.
+  Querying GO_Cellular_Component_2015... Done.
+  Querying GO_Biological_Process_2015... Done.
+Parsing results... Done.
+Error in `$<-.data.frame`(`*tmp*`, "Significant", value = numeric(0)) :
+  replacement has 0 rows, data has 2
+Calls: plotEnrich -> .enrichment_prep_df -> $<- -> $<-.data.frame
+Execution halted
+
+estimating size factors
+estimating dispersions
+gene-wise dispersion estimates
+mean-dispersion relationship
+final dispersion estimates
+fitting model and testing
+Welcome to enrichR
+Checking connections ... 
+Enrichr ... Connection is Live!
+FlyEnrichr ... Connection is Live!
+WormEnrichr ... Connection is Live!
+YeastEnrichr ... Connection is Live!
+FishEnrichr ... Connection is Live!
+OxEnrichr ... Connection is Live!
+Uploading data to Enrichr... Genes must be a character vector of Entrez gene symbols or a data.frame with gene symbols and/or score
+Done.
+  Querying GO_Molecular_Function_2015... Done.
+  Querying GO_Cellular_Component_2015... Done.
+  Querying GO_Biological_Process_2015... Done.
+Parsing results... Done.
+Error in `$<-.data.frame`(`*tmp*`, "Significant", value = numeric(0)) : 
+  replacement has 0 rows, data has 2
+Calls: plotEnrich -> .enrichment_prep_df -> $<- -> $<-.data.frame
+Execution halted
+estimating size factors
+estimating dispersions
+gene-wise dispersion estimates
+mean-dispersion relationship
+final dispersion estimates
+fitting model and testing
+Welcome to enrichR
+Checking connections ... 
+Enrichr ... Connection is Live!
+FlyEnrichr ... Connection is Live!
+WormEnrichr ... Connection is Live!
+YeastEnrichr ... Connection is Live!
+FishEnrichr ... Connection is Live!
+OxEnrichr ... Connection is Live!
+Uploading data to Enrichr... Genes must be a character vector of Entrez gene symbols or a data.frame with gene symbols and/or score
+Done.
+  Querying GO_Molecular_Function_2015... Done.
+  Querying GO_Cellular_Component_2015... Done.
+  Querying GO_Biological_Process_2015... Done.
+Parsing results... Done.
+Error in `$<-.data.frame`(`*tmp*`, "Significant", value = numeric(0)) : 
+  replacement has 0 rows, data has 2
+Calls: plotEnrich -> .enrichment_prep_df -> $<- -> $<-.data.frame
+Execution halted
+2025-08-27 05:46:10 - Executed: /usr/bin/Rscript /var/www/DGEAR/rnaseq.R /var/www/DGEAR/uploads/1Example_RNA-seq_data.tsv '1' '2' '3' '5' '0.05' '2' 2>&1 | tee -a /var/www/DGEAR/logs/rscript.log
+Return Code: 0
+Output:
+estimating size factors
+estimating dispersions
+gene-wise dispersion estimates
+mean-dispersion relationship
+final dispersion estimates
+fitting model and testing
+Welcome to enrichR
+Checking connections ...
+Enrichr ... Connection is Live!
+FlyEnrichr ... Connection is Live!
+WormEnrichr ... Connection is Live!
+YeastEnrichr ... Connection is Live!
+FishEnrichr ... Connection is Live!
+OxEnrichr ... Connection is Live!
+Uploading data to Enrichr... Genes must be a character vector of Entrez gene symbols or a data.frame with gene symbols and/or score
+Done.
+  Querying GO_Molecular_Function_2015... Done.
+  Querying GO_Cellular_Component_2015... Done.
+  Querying GO_Biological_Process_2015... Done.
+Parsing results... Done.
+Error in `$<-.data.frame`(`*tmp*`, "Significant", value = numeric(0)) :
+  replacement has 0 rows, data has 2
+Calls: plotEnrich -> .enrichment_prep_df -> $<- -> $<-.data.frame
+Execution halted
+
