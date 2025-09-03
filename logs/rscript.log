@@ -1759,3 +1759,211 @@ Error in plotEnrich(enriched[[1]], title = paste("GO_Enrichment:", names(enriche
   Input df is empty.
 Execution halted
 
+null device 
+          1 
+null device 
+          1 
+Uploading data to Enrichr... Done.
+  Querying GO_Molecular_Function_2021... Done.
+  Querying GO_Cellular_Component_2021... Done.
+  Querying GO_Biological_Process_2021... Done.
+Parsing results... Done.
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+trying URL 'https://stringdb-downloads.org/download/protein.aliases.v11.5/9606.protein.aliases.v11.5.txt.gz'
+Content type 'application/octet-stream' length 21726816 bytes (20.7 MB)
+==================================================
+downloaded 20.7 MB
+
+trying URL 'https://stringdb-downloads.org/download/protein.info.v11.5/9606.protein.info.v11.5.txt.gz'
+Content type 'application/octet-stream' length 1901833 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+Warning:  we couldn't map to STRING 4% of your identifierstrying URL 'https://stringdb-downloads.org/download/protein.links.v11.5/9606.protein.links.v11.5.txt.gz'
+Content type 'application/octet-stream' length 72718210 bytes (69.3 MB)
+==================================================
+downloaded 69.3 MB
+
+null device 
+          1 
+2025-08-28 08:15:28 - Executed: /usr/bin/Rscript /var/www/DGEAR/microarray.R /var/www/DGEAR/uploads/Example_microarray_data.txt '1' '2' '3' '4' '0.05' '4' 2>&1 | tee -a /var/www/DGEAR/logs/rscript.log
+Return Code: 0
+Output:
+null device
+          1
+null device
+          1
+Uploading data to Enrichr... Done.
+  Querying GO_Molecular_Function_2021... Done.
+  Querying GO_Cellular_Component_2021... Done.
+  Querying GO_Biological_Process_2021... Done.
+Parsing results... Done.
+null device
+          1
+null device
+          1
+null device
+          1
+trying URL 'https://stringdb-downloads.org/download/protein.aliases.v11.5/9606.protein.aliases.v11.5.txt.gz'
+Content type 'application/octet-stream' length 21726816 bytes (20.7 MB)
+==================================================
+downloaded 20.7 MB
+
+trying URL 'https://stringdb-downloads.org/download/protein.info.v11.5/9606.protein.info.v11.5.txt.gz'
+Content type 'application/octet-stream' length 1901833 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+Warning:  we couldn't map to STRING 4% of your identifierstrying URL 'https://stringdb-downloads.org/download/protein.links.v11.5/9606.protein.links.v11.5.txt.gz'
+Content type 'application/octet-stream' length 72718210 bytes (69.3 MB)
+==================================================
+downloaded 69.3 MB
+
+null device
+          1
+
+null device 
+          1 
+null device 
+          1 
+Uploading data to Enrichr... Done.
+  Querying GO_Molecular_Function_2021... Done.
+  Querying GO_Cellular_Component_2021... Done.
+  Querying GO_Biological_Process_2021... Done.
+Parsing results... Done.
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+trying URL 'https://stringdb-downloads.org/download/protein.aliases.v11.5/9606.protein.aliases.v11.5.txt.gz'
+Content type 'application/octet-stream' length 21726816 bytes (20.7 MB)
+==================================================
+downloaded 20.7 MB
+
+trying URL 'https://stringdb-downloads.org/download/protein.info.v11.5/9606.protein.info.v11.5.txt.gz'
+Content type 'application/octet-stream' length 1901833 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+Warning:  we couldn't map to STRING 4% of your identifierstrying URL 'https://stringdb-downloads.org/download/protein.links.v11.5/9606.protein.links.v11.5.txt.gz'
+Content type 'application/octet-stream' length 72718210 bytes (69.3 MB)
+=================null device 
+          1 
+null device 
+          1 
+=Uploading data to Enrichr... =Done.
+  Querying GO_Molecular_Function_2021... Done.
+  Querying GO_Cellular_Component_2021... Done.
+  Querying GO_Biological_Process_2021... Done.
+Parsing results... Done.
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+trying URL 'https://stringdb-downloads.org/download/protein.aliases.v11.5/9606.protein.aliases.v11.5.txt.gz'
+=Content type 'application/octet-stream' length 21726816 bytes (20.7 MB)
+=====================================================
+downloaded 49.5 MB
+
+Error in download.file(urlStr, temp) : 
+  download from 'https://stringdb-downloads.org/download/protein.links.v11.5/9606.protein.links.v11.5.txt.gz' failed
+Calls: <Anonymous> -> load -> downloadAbsentFile -> download.file
+Execution halted
+2025-09-01 15:32:40 - Executed: /usr/bin/Rscript /var/www/DGEAR/microarray.R /var/www/DGEAR/uploads/Example_microarray_data.txt '1' '2' '3' '4' '0.05' '3' 2>&1 | tee -a /var/www/DGEAR/logs/rscript.log
+Return Code: 0
+Output:
+null device
+          1
+null device
+          1
+Uploading data to Enrichr... Done.
+  Querying GO_Molecular_Function_2021... Done.
+  Querying GO_Cellular_Component_2021... Done.
+  Querying GO_Biological_Process_2021... Done.
+Parsing results... Done.
+null device
+          1
+null device
+          1
+null device
+          1
+trying URL 'https://stringdb-downloads.org/download/protein.aliases.v11.5/9606.protein.aliases.v11.5.txt.gz'
+Content type 'application/octet-stream' length 21726816 bytes (20.7 MB)
+==================================================
+downloaded 20.7 MB
+
+trying URL 'https://stringdb-downloads.org/download/protein.info.v11.5/9606.protein.info.v11.5.txt.gz'
+Content type 'application/octet-stream' length 1901833 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+Warning:  we couldn't map to STRING 4% of your identifierstrying URL 'https://stringdb-downloads.org/download/protein.links.v11.5/9606.protein.links.v11.5.txt.gz'
+Content type 'application/octet-stream' length 72718210 bytes (69.3 MB)
+===================================
+downloaded 49.5 MB
+
+Error in download.file(urlStr, temp) :
+  download from 'https://stringdb-downloads.org/download/protein.links.v11.5/9606.protein.links.v11.5.txt.gz' failed
+Calls: <Anonymous> -> load -> downloadAbsentFile -> download.file
+Execution halted
+
+============
+downloaded 20.7 MB
+
+trying URL 'https://stringdb-downloads.org/download/protein.info.v11.5/9606.protein.info.v11.5.txt.gz'
+Content type 'application/octet-stream' length 1901833 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+Warning:  we couldn't map to STRING 4% of your identifierstrying URL 'https://stringdb-downloads.org/download/protein.links.v11.5/9606.protein.links.v11.5.txt.gz'
+Content type 'application/octet-stream' length 72718210 bytes (69.3 MB)
+==================================================
+downloaded 69.3 MB
+
+null device 
+          1 
+2025-09-01 15:33:57 - Executed: /usr/bin/Rscript /var/www/DGEAR/microarray.R /var/www/DGEAR/uploads/Example_microarray_data.txt '1' '2' '3' '4' '0.05' '4' 2>&1 | tee -a /var/www/DGEAR/logs/rscript.log
+Return Code: 0
+Output:
+null device
+          1
+null device
+          1
+Uploading data to Enrichr... Done.
+  Querying GO_Molecular_Function_2021... Done.
+  Querying GO_Cellular_Component_2021... Done.
+  Querying GO_Biological_Process_2021... Done.
+Parsing results... Done.
+null device
+          1
+null device
+          1
+null device
+          1
+trying URL 'https://stringdb-downloads.org/download/protein.aliases.v11.5/9606.protein.aliases.v11.5.txt.gz'
+Content type 'application/octet-stream' length 21726816 bytes (20.7 MB)
+==================================================
+downloaded 20.7 MB
+
+trying URL 'https://stringdb-downloads.org/download/protein.info.v11.5/9606.protein.info.v11.5.txt.gz'
+Content type 'application/octet-stream' length 1901833 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+Warning:  we couldn't map to STRING 4% of your identifierstrying URL 'https://stringdb-downloads.org/download/protein.links.v11.5/9606.protein.links.v11.5.txt.gz'
+Content type 'application/octet-stream' length 72718210 bytes (69.3 MB)
+==================================================
+downloaded 69.3 MB
+
+null device
+          1
+

@@ -19,7 +19,7 @@
         <!-- Loading div ends-->
 
         <!-- form starts -->
-        <form id="analysisForm" action="process.php" method="POST" enctype="multipart/form-data">
+        <form id="analysisForm" action="process.php" method="POST" enctype="multipart/form-data" autocomplete="on">
             <div class="form-group">
                 <a href="analysis.php" id="active" class="change-btn">[Microarray Analysis]</a>
             </div>
@@ -36,30 +36,44 @@
 
             <div class="form-group">
                 <label for="con1">Control Start Column:</label>
-                <input type="text" name="con1" required>
-
+                <input type="number" placeholder="1" min="1" name="con1" required>
+                <span class="info-icon" data-tooltip="Enter the column number where the Control group samples begin in your dataset. Example: If Control samples are in columns 1 and 2, the start column is 1.">i</span>
+            </div>
+            <div class="form-group">
                 <label for="con2">Control End Column:</label>
-                <input type="text" name="con2" required>
+                <input type="number" placeholder="2" min="1" name="con2" required>
+                <span class="info-icon" data-tooltip="Enter the column number where the Control group samples end. Example: If Control samples are in columns 1 and 2, the end column is 2.">i</span>
             </div>
 
             <div class="form-group">
                 <label for="exp1">Experiment Start Column:</label>
-                <input type="text" name="exp1" required>
-
+                <input type="number" placeholder="3" min="1" name="exp1" required>
+                <span class="info-icon" data-tooltip="Enter the column number where the Experiment group samples begin. Example: If Experiment samples are in columns 3 and 4, the start column is 3.">i</span>
+            </div>
+            <div class="form-group">
                 <label for="exp2">Experiment End Column:</label>
-                <input type="text" name="exp2" required>
+                <input type="number" placeholder="4" min="1" name="exp2" required>
+                <span class="info-icon" data-tooltip="Enter the column number where the Experiment group samples end. Example: If Experiment samples are in columns 3 and 4, the end column is 4.">i</span>
             </div>
 
             <div class="form-group">
                 <label for="alpha">Alpha Value:</label>
                 <input type="text" name="alpha" placeholder="Any value i.e. 0.1, 0.05, 0.005 etc." required>
-
-                <label for="votting_cutoff">Voting Cutoff:</label>
-                <input type="text" name="votting_cutoff" placeholder="Any number 1 to 5." required>
+                <span class="info-icon" data-tooltip="Set the False Discovery Rate (FDR) cutoff for multiple testing correction. Default is 0.05.">i</span>
             </div>
             <div class="form-group">
-                <label for="download">Download Example data:</label>
+                <label for="votting_cutoff">Voting Cutoff:</label>
+                <input type="text" name="votting_cutoff" placeholder="Any number 1 to 5." required>
+                <span class="info-icon" data-tooltip="Specify the minimum number of methods that must agree (i.e., vote) for a gene to be considered significantly differentially expressed.">i</span>
+            </div>
+            <div class="form-group">
+                <label for="download">Download Example Microarray data:</label>
+                <br>
                 <a href="example/Example_microarray_data.txt" download class="download-btn">Microarray Data</a><br>
+            </div>
+            <div class="form-group">
+                <label for="download">Download Example RNA-seq data:</label>
+                <br>
                 <a href="example/Example_RNA-seq_data.tsv" download class="download-btn">RNA-seq Data</a>
             </div>
 
