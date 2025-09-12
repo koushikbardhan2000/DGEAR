@@ -358,7 +358,7 @@ button:hover {
 .download-btn {
     display: inline-block;
     padding: 10px;
-    background-color: #068;
+    background-color: rgb(141, 158, 255);
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -368,13 +368,13 @@ button:hover {
 }
 
 .download-btn:hover {
-    background-color: #0056b3;
+    background-color: rgb(64, 80, 173);
 }
 
 .change-btn {
     display: inline-block;
     padding: 10px;
-    background-color: #068;
+    background-color: rgb(141, 158, 255);
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -384,7 +384,7 @@ button:hover {
 }
 
 .change-btn:hover {
-	background-color: #0056b3;
+	background-color: rgb(64, 80, 173);
 }
 #active {
   color: white; /* Text color */
