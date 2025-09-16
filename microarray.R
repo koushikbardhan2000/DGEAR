@@ -160,9 +160,7 @@ dev.off()
 # GESA with enrichR
 # library(enrichR)
 gene_list = row.names(ensembl_significant)
-dbs <- c("GO_Molecular_Function_2021",
-         "GO_Cellular_Component_2021",
-         "GO_Biological_Process_2021")
+dbs <- c("GO_Molecular_Function_2021", "GO_Cellular_Component_2021", "GO_Biological_Process_2021")
 enriched = enrichr(gene_list, dbs)
 
 file_name = paste0("/var/www/DGEAR/plots/GO_Enrichment_", names(enriched)[1], ".png")
@@ -190,7 +188,7 @@ dev.off()
 # library(igraph)
 
 # gene list dataframe for STRINGdb
-gene_list <- data.frame(genes = row.names(ensembl_significant)[seq_len(min(50, nrow(ensembl_significant)))])
+gene_list <- data.frame(genes = row.names(ensembl_significant)[1:min(50, nrow(ensembl_significant))])
 # [1:min(50, nrow(ensembl_significant))] only build upto 50 genes ppi network
 # Initialize STRINGdb and map genes
 string_db <- STRINGdb$new(version="11.5", species=9606, score_threshold=400, input_directory="")
